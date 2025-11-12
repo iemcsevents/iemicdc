@@ -1,7 +1,8 @@
 import { Container } from "@/components/Container";
 import Link from "next/link";
-import { Bot, Shield, Cloud, Eye, Award, FileText, Calendar, Users } from "lucide-react";
+import { Bot, Shield, Cloud, Eye, FileText, Calendar, BookMarked, FileDown, Code, BookOpen, Trophy, Send } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Call for Papers - Paper Submission Guidelines",
@@ -58,7 +59,7 @@ const Track = ({
 }) => {
   const icon = getTrackIcon(trackNumber);
   const colorClass = getTrackColor(trackNumber);
-  
+
   return (
     <div id={id} className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
       {/* Header */}
@@ -73,12 +74,12 @@ const Track = ({
           </div>
         </div>
       </div>
-      
+
       {/* Content */}
       <div className="p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {list.map((item, index) => (
-            <div 
+            <div
               key={index}
               className="group flex items-start space-x-3 p-4 bg-white rounded-xl border border-gray-100 hover:border-gray-200 hover:shadow-md transition-all duration-200"
             >
@@ -89,7 +90,7 @@ const Track = ({
             </div>
           ))}
         </div>
-        
+
         {/* <div className="mt-8 flex justify-between items-center">
           <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
             {list.length} Research Areas
@@ -120,34 +121,112 @@ export default function Papers() {
       </div>
 
       <Container className="py-10 flex flex-col items-center justify-start gap-12 mt-12">
-        
+
         {/* Key Information Cards */}
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <FileText className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Submit Paper</h3>
-            <p className="text-blue-100 mb-4">Submit your research paper via EasyChair</p>
-            <Link 
+          {/* Submit Paper */}
+          <div className="bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Send className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">Submit Paper</h3>
+            <p className="text-blue-100 text-sm mb-3">Upload your research paper through EasyChair</p>
+            <Link
               href="https://easychair.org/conferences?conf=iemicdc2026"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-blue-600 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 shadow-md hover:shadow-lg"
+              className="inline-block bg-white text-blue-700 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-blue-50 transition-all duration-300"
             >
               Submit Now →
             </Link>
           </div>
-          
-          <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <Award className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">Best Paper Award</h3>
-            <p className="text-red-100">Outstanding papers will be recognized with prestigious awards</p>
+
+          {/* Best Paper Award */}
+          <div className="bg-gradient-to-br from-red-500 to-rose-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Trophy className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">Best Paper Award</h3>
+            <p className="text-rose-100 text-sm mb-3">Outstanding research will be honored with awards</p>
           </div>
-          
-          <div className="bg-gradient-to-br from-red-500 to-red-600 rounded-2xl p-6 text-white text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <FileText className="w-12 h-12 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-2">10 Pages Preferably</h3>
-            <p className="text-red-100">Full papers preferred. No short papers accepted</p>
-          </div>          
+
+          {/* Paper Length */}
+          <div className="bg-gradient-to-br from-yellow-500 to-amber-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <FileText className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">10 Pages Minimum</h3>
+            <p className="text-yellow-100 text-sm">Full-length papers only. No short submissions accepted.</p>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          {/* Guidelines */}
+          <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <BookOpen className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">Author Guidelines</h3>
+            <p className="text-blue-100 text-sm mb-3">Follow Springer’s official formatting and submission rules</p>
+            <Link
+              href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-700 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-blue-50 transition-all duration-300"
+            >
+              View Guidelines →
+            </Link>
+          </div>
+
+          {/* LaTeX Template */}
+          <div className="bg-gradient-to-br from-red-500 to-pink-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Code className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">LaTeX Template</h3>
+            <p className="text-pink-100 text-sm mb-3">Get the official Springer LaTeX template for submissions</p>
+            <Link
+              href="/templates/LaTeX2e_Templates.zip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-red-600 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-pink-50 transition-all duration-300"
+            >
+              Download →
+            </Link>
+          </div>
+
+          {/* Word Template */}
+          <div className="bg-gradient-to-br from-amber-500 to-yellow-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <FileDown className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">Word Template</h3>
+            <p className="text-yellow-100 text-sm mb-3">Use the Microsoft Word template in Springer format</p>
+            <Link
+              href="/templates/Microsoft_Word_Templates.zip"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-amber-600 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-amber-50 transition-all duration-300"
+            >
+              Download →
+            </Link>
+          </div>
+        </div>
+
+        <div className="bg-blue-100/50 p-8 rounded-xl shadow-lg border border-blue-200 text-center">
+          <h2 className="text-xl sm:text-2xl font-semibold text-blue-800 mb-6 uppercase tracking-wide">
+            📝 Publication & Indexing Details
+          </h2>
+
+          <p className="text-lg text-blue-900 mb-4">
+            The conference proceedings will be published in the Springer Book Series:{' '}
+            <span className="font-semibold italic text-blue-800">
+              {/* &quot;Approval Awaiting&quot; */}
+              Approval Awaiting
+            </span>
+          </p>
+
+          <div className="flex justify-center items-center my-6">
+            <Image
+              src="/images/sp.png"
+              width={250}
+              height={80}
+              alt="Springer Logo"
+            />
+          </div>
+
+          {/* <p className="text-base sm:text-lg text-blue-900">
+            <strong>Indexing:</strong> SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago
+          </p> */}
         </div>
 
         {/* Important Notice */}
@@ -168,7 +247,7 @@ export default function Papers() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Research Tracks</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full mb-6"></div>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Explore four specialized research areas covering cutting-edge topics in computational intelligence, 
+            Explore four specialized research areas covering cutting-edge topics in computational intelligence,
             data science, and cloud computing. Each track welcomes innovative research contributions.
           </p>
         </div>

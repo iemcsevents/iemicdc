@@ -83,7 +83,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                   className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
                 >
                   <RelatedPost
-                    title="IEM Kolkata"
+                    title="Host Institute: IEM Kolkata"
                     image="/images/gurukul_image.png"
                     slug="#"
                   />
