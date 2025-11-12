@@ -177,7 +177,7 @@ export default function Papers() {
             <h3 className="text-lg font-bold mb-1">LaTeX Template</h3>
             <p className="text-pink-100 text-sm mb-3">Get the official Springer LaTeX template for submissions</p>
             <Link
-              href="/templates/LaTeX2e_Templates.zip"
+              href="https://drive.google.com/file/d/145BCv_wrO2ugNn53HwobPYExRRIvr0T6/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-red-600 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-pink-50 transition-all duration-300"
@@ -192,7 +192,7 @@ export default function Papers() {
             <h3 className="text-lg font-bold mb-1">Word Template</h3>
             <p className="text-yellow-100 text-sm mb-3">Use the Microsoft Word template in Springer format</p>
             <Link
-              href="/templates/Microsoft_Word_Templates.zip"
+              href="https://drive.google.com/file/d/1-VUD2x22n5ZsX3TJaQgLpE-tEauDBw2h/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-amber-600 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-amber-50 transition-all duration-300"
