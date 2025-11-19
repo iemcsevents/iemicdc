@@ -210,8 +210,7 @@ export default function Papers() {
           <p className="text-lg text-blue-900 mb-4">
             The conference proceedings will be published in the Springer Book Series:{' '}
             <span className="font-semibold italic text-blue-800">
-              {/* &quot;Approval Awaiting&quot; */}
-              Approval Awaiting
+              &quot;Lecture Notes in Networks and Systems&quot;
             </span>
           </p>
 
@@ -224,9 +223,9 @@ export default function Papers() {
             />
           </div>
 
-          {/* <p className="text-base sm:text-lg text-blue-900">
+          <p className="text-base sm:text-lg text-blue-900">
             <strong>Indexing:</strong> SCOPUS, INSPEC, WTI Frankfurt eG, zbMATH, SCImago
-          </p> */}
+          </p>
         </div>
 
         {/* Important Notice */}
