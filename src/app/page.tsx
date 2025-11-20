@@ -318,6 +318,9 @@ export default function Home() {
           <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
             <Image src="/images/aenix.jpeg" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-full rounded group-hover:scale-105 transition-transform duration-300" />
           </div>
+          <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
+            <Image src="/images/iem_rf.jpeg" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-full rounded group-hover:scale-105 transition-transform duration-300" />
+          </div>
         </div>
       </div>
 
