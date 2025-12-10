@@ -112,7 +112,7 @@ export const Footer = () => {
               <div className="space-y-2 text-sm">
                 <div>
                   <p className="text-gray-400">Paper Submission Deadline</p>
-                  <p className="text-green-400 font-semibold">December 10, 2025</p>
+                  <p className="text-green-400 font-semibold">December 30, 2025</p>
                 </div>
                 <div>
                   <p className="text-gray-400">Notification of Acceptance</p>
