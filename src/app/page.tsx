@@ -109,7 +109,6 @@ export default function Home() {
             <h2 className="text-base sm:text-lg md:text-2xl lg:text-3xl font-semibold text-white drop-shadow-lg" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.8)' }}>
               4th International Conference on Computational Intelligence, Data Science and Cloud Computing
             </h2>
-
             <p className="text-sm font-bold sm:text-base md:text-lg lg:text-xl text-gray-100 leading-relaxed max-w-4xl mx-auto drop-shadow-xl" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.7)' }}>
               Organized by<br/>
               Department of Information Technology & Department of Computer Science & Engineering<br/>

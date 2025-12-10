@@ -38,7 +38,6 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-
           {/* Conference Links */}
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Conference</h4>
