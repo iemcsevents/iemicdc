@@ -144,13 +144,14 @@ const committeeList = {
       "Ms. Bijoyini Baghchi, Institute of Engineering and Management, Kolkata, India",
       "Dr. Sobya Devraj, Institute of Engineering and Management, Kolkata, India",
       "Mr. Apurba Paul, Institute of Engineering and Management, Kolkata, India",
+      "Dr.Tanima Bhowmik, Institute of Engineering and Management, Kolkata, India",
+      "Mr. Partha Chakraborty, Institute of Engineering and Management, Kolkata, India",
       "Ms. Mohuya Ghosh, Institute of Engineering and Management, Kolkata, India",
       "Mr. Kartik Ghosh, Institute of Engineering and Management, Kolkata, India",
       "Mr. Pinaki Karmakar, Institute of Engineering and Management, Kolkata, India",
       "Mr Amit Kumar Roy, Institute of Engineering and Management, Kolkata, India",
       "Mr Aishik Das, Institute of Engineering and Management, Kolkata, India",
-      "Mr. Partha Chakraborty, Institute of Engineering and Management, Kolkata, India",
-      "Dr.Tanima Bhowmik, Institute of Engineering and Management, Kolkata, India",
+      
     ]
   },
 }
