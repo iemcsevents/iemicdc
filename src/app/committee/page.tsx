@@ -109,8 +109,8 @@ const committeeList = {
       "Dr. Prithwineel Paul, Institute of Engineering and Management, Kolkata, India",
       "Dr. Susovan Jana, Institute of Engineering and Management, Kolkata, India",
       "Dr. Rupayan Das, Institute of Engineering and Management, Kolkata, India",
-      "Mr. Subhabrata Sengupta, Institute of Engineering and Management, Kolkata, India",
-      "Mr. Avijit Bose, Institute of Engineering and Management, Kolkata, India",
+      "Dr. Subhabrata Sengupta, Institute of Engineering and Management, Kolkata, India",
+      "Dr. Avijit Bose, Institute of Engineering and Management, Kolkata, India",
       "Dr. Soumyendu Sekhar Bandhopadhyay, Institute of Engineering and Management, Kolkata, India",
       "Dr. Soma Das, Institute of Engineering and Management, Kolkata, India",
       "Ms. Shreejita Mukherjee, Institute of Engineering and Management, Kolkata, India",
@@ -148,7 +148,9 @@ const committeeList = {
       "Mr. Kartik Ghosh, Institute of Engineering and Management, Kolkata, India",
       "Mr. Pinaki Karmakar, Institute of Engineering and Management, Kolkata, India",
       "Mr Amit Kumar Roy, Institute of Engineering and Management, Kolkata, India",
-      "Mr Aishik Das, Institute of Engineering and Management, Kolkata, India"
+      "Mr Aishik Das, Institute of Engineering and Management, Kolkata, India",
+      "Mr. Partha Chakraborty, Institute of Engineering and Management, Kolkata, India",
+      "Dr.Tanima Bhowmik, Institute of Engineering and Management, Kolkata, India",
     ]
   },
 }
