@@ -108,7 +108,7 @@ const Header = () => {
                 height={318}
                 priority
                 quality={100}
-                className="sm:h-[5vh] md:h-[6vh] lg:h-[6vh] xl:h-[7vh] h-[4.4vh] w-auto max-w-[5rem] sm:max-w-[5rem] md:max-w-[7rem] lg:max-w-[7rem] xl:max-w-[8rem] object-contain rounded-lg"
+                className="sm:h-[6vh] md:h-[6vh] lg:h-[6vh] xl:h-[7vh] h-[4.4vh] w-auto max-w-[5rem] sm:max-w-[6rem] md:max-w-[7rem] lg:max-w-[7rem] xl:max-w-[8rem] object-contain rounded-lg"
               />
             </div>
 
