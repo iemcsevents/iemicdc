@@ -79,6 +79,8 @@ const committeeList = {
       "Dr. Dinesh Dash, NIT, Patna",
       "Dr. Indranil Mitra, PwC",
       "Dr. Somnath Banerjee, University of Tartu, Estonia",
+      "Dr. Daniel Hahn, Quantum Servicios Maritimos, Chile",
+      "Dr. Diptiman Banerji, IIM Raipur",
       "Dr. Kamarujjaman, MAKAUT",
       "Dr. Dipankar Das, Jadavpur University",
       "Dr. Anupama Mehra, Amity University, Noida",

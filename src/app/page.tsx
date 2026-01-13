@@ -447,7 +447,7 @@ export default function Home() {
                     Deadline for full paper Submission
                   </td>
                   <td className="px-6 py-4">
-                    <span className="text-green-600 font-semibold">December 30, 2025</span>
+                    <span className="text-red-600 font-semibold">Submission Closed</span>
                   </td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50 transition-colors">
