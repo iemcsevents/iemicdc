@@ -179,54 +179,51 @@ export default function Home() {
       <div className="w-full max-w-7xl flex flex-col items-center justify-start gap-8 animate-on-scroll px-4">
         <div className="text-center space-y-4">
           <h1 className="w-full md:text-5xl text-3xl text-center text-primary font-bold fade-in bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-            Keynote Speakers - ICDC 2025
+            Keynote Speakers - ICDC 2026
           </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
         </div>
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 stagger-animation">
           <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
-              <Image src="/images/S4.png" width={120} height={120} alt="Prof. Michael Hinchey" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
+              <Image src="/images/S1.png" width={120} height={120} alt="Prof. Utpal Garain" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Prof. Michael Hinchey</h3>
+              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Prof. Utpal Garain</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Irish computer scientist and former Director of the Irish Software
-                Engineering Research Centre, University of Limerick, Ireland.
+                Professor at Indian Statistical Institute, Head of Computer Vision and Pattern Recognition Unit (CVPRU), and ISI Centre for Artificial Intelligence and Machine Learning (CAIML)
               </p>
             </div>
           </div>
 
           <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
-              <Image src="/images/S1.png" width={120} height={120} alt="Dr. Michael Sheng" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
+              <Image src="/images/S2.png" width={120} height={120} alt="Manojit Sengupta" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Michael Sheng</h3>
+              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Manojit Sengupta</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Distinguished Professor & Head of School of Computing, Macquarie University.
-                Vice Chair, IEEE Technical Community on Services Computing.
+                Delivery Centre Head, Industry Lead for Energy, Resource and Utilities for TCS, Digital and Supply Chain Transformation Lead and CIO Advisory
               </p>
             </div>
           </div>
 
           <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1">
             <div className="relative">
-              <Image src="/images/S2.png" width={120} height={120} alt="Prof. Amlan Chakrabarti" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
+              <Image src="/images/S3.png" width={120} height={120} alt="Soumya Sengupta" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-primary text-lg mb-2">Prof. Amlan Chakrabarti</h3>
+              <h3 className="font-bold text-primary text-lg mb-2">Soumya Sengupta</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Professor and Director, A.K. Choudhury School of IT, University of Calcutta.
-                Adjunct Professor, IIIT Delhi.
+                Managing Director @ PwC, Azure Cloud Practice Lead
               </p>
             </div>
           </div>
 
-          <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
+          {/* <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
               <Image src="/images/S3.png" width={120} height={120} alt="Dr. Indranil Mitra" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -238,9 +235,9 @@ export default function Home() {
                 Data Science & Emerging Technologies Expert.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
+          {/* <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
               <Image src="/images/S5.png" width={120} height={120} alt="Dr. Anbuthambi Bhojarajan" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -266,7 +263,7 @@ export default function Home() {
                 <Link href={"https://www.oxy.edu"} className="text-red-500 hover:underline">https://www.oxy.edu</Link>
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
