@@ -192,7 +192,7 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Prof. Utpal Garain</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Professor at Indian Statistical Institute, Head of Computer Vision and Pattern Recognition Unit (CVPRU), and ISI Centre for Artificial Intelligence and Machine Learning (CAIML)
+                Professor at Indian Statistical Institute, Head of Computer Vision and Pattern Recognition Unit (CVPRU), Centre for Artificial Intelligence and Machine Learning (CAIML), ISI, Kolkata
               </p>
             </div>
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Manojit Sengupta</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Delivery Centre Head, Industry Lead for Energy, Resource and Utilities for TCS, Digital and Supply Chain Transformation Lead and CIO Advisory
+                Delivery Centre Head, Industry Lead for Energy, Resource and Utilities, TCS, Kolkata
               </p>
             </div>
           </div>
