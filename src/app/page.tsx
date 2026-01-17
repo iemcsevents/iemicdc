@@ -218,7 +218,7 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-bold text-primary text-lg mb-2">Soumya Sengupta</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Managing Director @ PwC, Azure Cloud Practice Lead
+                Managing Director and Azure Cloud Practice Lead, PwC India
               </p>
             </div>
           </div>
