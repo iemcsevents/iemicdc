@@ -192,7 +192,7 @@ export default function Home() {
             <div className="text-center">
               <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Prof. Utpal Garain</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Professor at Indian Statistical Institute, Head of Computer Vision and Pattern Recognition Unit (CVPRU), Centre for Artificial Intelligence and Machine Learning (CAIML), ISI, Kolkata
+                Professor,  Head of Computer Vision and Pattern Recognition Unit (CVPRU), Centre for Artificial Intelligence and Machine Learning (CAIML),  Indian Statistical Institute, Kolkata
               </p>
             </div>
           </div>
