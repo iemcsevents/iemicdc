@@ -225,7 +225,7 @@ export default function Home() {
 
           <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
-              <Image src="/images/S4.png" width={120} height={120} alt="Dr. Indranil Mitra" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
+              <Image src="/images/S4.png" width={120} height={120} alt="Sankar Ghosh" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
@@ -236,20 +236,20 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
+          <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
-              <Image src="/images/S5.png" width={120} height={120} alt="Dr. Anbuthambi Bhojarajan" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
+              <Image src="/images/S5.png" width={120} height={120} alt="Dr. Arpan Pal" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Anbuthambi Bhojarajan</h3>
+              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Arpan Pal</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Head of Strategy, L&T EduTech, Larsen & Toubro Ltd.
+                Distinguished Chief Scientist and Research Area Head, Embedded Devices and Intelligent Systems, TCS, Kolkata, India
               </p>
             </div>
           </div>
 
-          <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
+          {/* <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
               <Image src="/images/S6.png" width={120} height={120} alt="Prof. Treena Basu" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
