@@ -107,17 +107,7 @@ const BankDetails = ({ title, icon, datas, headerColor, qrCode }: {
         </div>
       </div>
       <div className="p-6 space-y-4">
-        {/* Render QR Code if provided */}
-        {qrCode && (
-          <div className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl border border-dashed border-gray-300 mb-4">
-            <img 
-              src={qrCode} 
-              alt="Payment QR Code" 
-              className="w-48 h-48 object-contain rounded-lg shadow-sm"
-            />
-            <p className="text-xs text-gray-500 mt-2 font-medium">Scan to pay via UPI</p>
-          </div>
-        )}
+        
         {datas.map(({ col1, col2 }, id) => (
           <div key={id} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
             <div>
@@ -129,6 +119,17 @@ const BankDetails = ({ title, icon, datas, headerColor, qrCode }: {
             )}
           </div>
         ))}
+        {/* Render QR Code if provided */}
+        {qrCode && (
+          <div className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl border border-dashed border-gray-300 mb-4">
+            <img 
+              src={qrCode} 
+              alt="Payment QR Code" 
+              className="w-48 h-48 object-contain rounded-lg shadow-sm"
+            />
+            <p className="text-xs text-gray-500 mt-2 font-medium">Scan to pay via UPI</p>
+          </div>
+        )}
       </div>
     </div>
   );
