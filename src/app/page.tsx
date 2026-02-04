@@ -249,20 +249,20 @@ export default function Home() {
             </div>
           </div>
 
-          {/* <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
+          <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover-lift hover:shadow-xl transition-all duration-300">
             <div className="relative">
               <Image src="/images/S6.png" width={120} height={120} alt="Prof. Treena Basu" className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300" />
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Prof. Treena Basu</h3>
+              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Uemaru Wataru</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Associate Professor, Department of Mathematics, Occidental College, Los Angeles.
+                Associate Professor, Department of Electronics and Informatics, Ryukoku University, Kyoto, Japan.
                 <br />
                 <Link href={"https://www.oxy.edu"} className="text-red-500 hover:underline">https://www.oxy.edu</Link>
               </p>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
 
