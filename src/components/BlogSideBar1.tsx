@@ -111,7 +111,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                 </li>
                 <li className="flex items-center gap-3">
                   <FaMapMarkerAlt className="text-[#4A6CF7]" />
-                  <span>Kolkata</span>
+                  <span>Software Technology Parks of India, Kolkata</span>
                 </li>
                 {/* <li className="flex items-center gap-3">
                   <FaClock className="text-[#4A6CF7]" />

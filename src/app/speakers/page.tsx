@@ -1,148 +1,139 @@
 import { Container } from "@/components/Container";
 import { Mic, Users, Star, Calendar } from "lucide-react";
+import Image from "next/image";
+
+const SpeakerCard = ({ name, role, imageSrc }: { name: string; role: string; imageSrc: string }) => (
+  <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+    <div className="relative">
+      <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <Image 
+        src={imageSrc} 
+        width={120} 
+        height={120} 
+        alt={name} 
+        className="rounded-full object-cover border-4 border-white shadow-lg relative z-10" 
+      />
+    </div>
+    <div className="text-center">
+      <h3 className="font-bold text-gray-800 text-lg md:text-xl mb-3">{name}</h3>
+      <p className="text-sm text-gray-600 leading-relaxed">
+        {role}
+      </p>
+    </div>
+  </div>
+);
 
 export default function Speakers() {
+  const keynoteSpeakers = [
+    {
+      name: "Prof. Utpal Garain",
+      role: "Professor, Head of Computer Vision and Pattern Recognition Unit (CVPRU), Centre for Artificial Intelligence and Machine Learning (CAIML), Indian Statistical Institute, Kolkata",
+      imageSrc: "/images/S1.png"
+    },
+    {
+      name: "Manojit Sengupta",
+      role: "Delivery Centre Head, Industry Lead for Energy, Resource and Utilities, TCS, Kolkata",
+      imageSrc: "/images/S2.png"
+    },
+    {
+      name: "Soumya Sengupta",
+      role: "Managing Director & Azure Cloud Practice Lead, PwC, India",
+      imageSrc: "/images/S3.png"
+    },
+    {
+      name: "Sankar Ghosh",
+      role: "Technology Solutions Lead - Asia Pacific and LATAM, Accenture, India",
+      imageSrc: "/images/S4.png"
+    },
+    {
+      name: "Dr. Arpan Pal",
+      role: "Distinguished Chief Scientist and Research Area Head, Embedded Devices and Intelligent Systems, TCS, Kolkata, India",
+      imageSrc: "/images/S5.jpg"
+    },
+    {
+      name: "Dr. Uemaru Wataru",
+      role: "Associate Professor, Department of Electronics and Informatics, Ryukoku University, Kyoto, Japan",
+      imageSrc: "/images/S6.png"
+    }
+  ];
+
   return (
     <>
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-red-600 via-red-700 to-black text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="flex justify-center items-center space-x-4 mb-6">
-            <h1 className="text-4xl md:text-6xl font-bold">Speakers</h1>
-          </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Speakers</h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            World-renowned experts and visionary leaders will share their insights at IEM ICDC 2026
+            World-renowned experts and visionary leaders sharing insights at IEM ICDC 2026
           </p>
         </div>
       </div>
 
-      <Container className="flex flex-col items-center justify-center gap-12 py-20 mt-12 min-h-[60vh]">
-        
-        {/* Coming Soon Section */}
-        <div className="w-full max-w-4xl text-center">
-          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100 p-12 md:p-16">
-            
-            {/* Icon */}
-            <div className="flex justify-center mb-8">
-              <div className="bg-gradient-to-r from-red-500 to-red-600 p-6 rounded-full shadow-lg">
-                <Mic className="w-12 h-12 text-white" />
-              </div>
-            </div>
-
-            {/* Main Message */}
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Distinguished Speakers Coming Soon
-            </h2>
-            
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              We are curating an exceptional lineup of keynote speakers, industry pioneers, and academic leaders 
-              who will inspire and share cutting-edge insights at IEM ICDC 2026.
-            </p>
-
-            {/* Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-                <Users className="w-8 h-8 text-red-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Industry Leaders</h3>
-                <p className="text-gray-600 text-sm">Visionaries from top tech companies</p>
-              </div>
-              
-              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-                <Star className="w-8 h-8 text-red-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Academic Excellence</h3>
-                <p className="text-gray-600 text-sm">Renowned researchers and professors</p>
-              </div>
-              
-              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-                <Calendar className="w-8 h-8 text-red-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Keynote Sessions</h3>
-                <p className="text-gray-600 text-sm">Inspiring talks across all three days</p>
-              </div>
-            </div>
-
-            {/* Speaker Categories Preview */}
-            <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-8 mb-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-6">What to Expect</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Technology Innovation</h4>
-                    <p className="text-gray-600 text-sm">Latest advancements in emerging technologies</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Research Excellence</h4>
-                    <p className="text-gray-600 text-sm">Groundbreaking research methodologies</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Industry Insights</h4>
-                    <p className="text-gray-600 text-sm">Real-world applications and case studies</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">Future Trends</h4>
-                    <p className="text-gray-600 text-sm">Vision for tomorrow&apos;s technology landscape</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Status Cards */}
-            {/* <div className="flex justify-center mb-8">
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6 max-w-sm">
-                <Star className="w-8 h-8 text-green-600 mx-auto mb-3" />
-                <h4 className="font-semibold text-green-800 text-lg">Announcements</h4>
-                <p className="text-green-600 mt-2">Coming very soon</p>
-              </div>
-            </div> */}
-
-            {/* Call to Action */}
-            {/* <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-white">
-              <Mic className="w-12 h-12 mx-auto mb-4 text-yellow-400" />
-              <h3 className="text-xl font-bold mb-4">Be the First to Know</h3>
-              <p className="text-red-100 mb-6">
-                Register now and receive exclusive updates about our speaker announcements, 
-                including early access to speaker profiles and session details.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/registrations" 
-                  className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Register for Updates
-                </a>
-                <a 
-                  href="/papers" 
-                  className="bg-red-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Submit Your Paper
-                </a>
-              </div>
-            </div> */}
-
-          </div>
+      <Container className="py-20">
+        {/* Section Heading */}
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent inline-block">
+            Keynote Speakers - ICDC 2026
+          </h2>
+          <div className="h-1.5 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
         </div>
 
-        {/* Additional Information */}
-        {/* <div className="w-full max-w-4xl">
-          <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-xl border border-gray-800 text-white p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4 text-yellow-400">Why Our Speakers Matter</h3>
-            <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              IEM ICDC 2026 will feature thought leaders who are shaping the future of technology and innovation. 
-              Our carefully selected speakers will provide invaluable insights, practical knowledge, and inspiration 
-              to help attendees advance their research and careers in the digital age.
-            </p>
-          </div>
-        </div> */}
+        {/* Speakers Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+          {keynoteSpeakers.map((speaker, index) => (
+            <SpeakerCard 
+              key={index}
+              name={speaker.name}
+              role={speaker.role}
+              imageSrc={speaker.imageSrc}
+            />
+          ))}
+        </div>
 
+        {/* Features / Expectation Section */}
+        <div className="mt-24 w-full max-w-5xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <Users className="w-10 h-10 text-red-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-800">Industry Leaders</h3>
+                <p className="text-gray-600 text-sm">Visionaries from top global firms</p>
+              </div>
+              <div className="text-center">
+                <Star className="w-10 h-10 text-red-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-800">Academic Excellence</h3>
+                <p className="text-gray-600 text-sm">Leading researchers & scholars</p>
+              </div>
+              <div className="text-center">
+                <Calendar className="w-10 h-10 text-red-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-800">Expert Sessions</h3>
+                <p className="text-gray-600 text-sm">Immersive 3-day knowledge sharing</p>
+              </div>
+            </div>
+            
+            {/* <div className="bg-gray-50 rounded-2xl p-6 md:p-10">
+              <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Session Tracks</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-red-600 rounded-full mt-2 shrink-0"></div>
+                  <p className="text-gray-700 font-medium">Technology Innovation & Emerging Tech</p>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-red-600 rounded-full mt-2 shrink-0"></div>
+                  <p className="text-gray-700 font-medium">Research Methodologies & Excellence</p>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-red-600 rounded-full mt-2 shrink-0"></div>
+                  <p className="text-gray-700 font-medium">Industry 4.0 Applications & Case Studies</p>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-3 h-3 bg-red-600 rounded-full mt-2 shrink-0"></div>
+                  <p className="text-gray-700 font-medium">Future Trends in Digital Landscape</p>
+                </div>
+              </div>
+            </div> */}
+          </div>
+        </div>
       </Container>
     </>
   );

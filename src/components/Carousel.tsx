@@ -127,7 +127,7 @@ function Carousel({ ...props }) {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20 fade-in-delay-2">
-              <h3 className="text-xl md:text-2xl font-semibold text-yellow-300">March 27-28, 2026</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-yellow-300">March 16-18, 2026</h3>
             </div>
             
             <div className="text-center space-y-2 fade-in-delay-3">

@@ -1,109 +1,110 @@
-import { Container } from "@/components/Container";
-import { MapPin, Clock, Calendar } from "lucide-react";
+// import { Container } from "@/components/Container";
+// import { MapPin, Clock, Calendar } from "lucide-react";
 
-export default function Venue() {
-  return (
-    <>
-      {/* Hero Section */}
-      <div className="bg-gradient-to-br from-red-600 via-red-700 to-black text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Venue</h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            IEM ICDC 2026 will be held in Kolkata, West Bengal - detailed venue information coming soon
-          </p>
-        </div>
-      </div>
+// export default function Venue() {
+//   return (
+//     <>
+//       {/* Hero Section */}
+//       <div className="bg-gradient-to-br from-red-600 via-red-700 to-black text-white py-16 md:py-24">
+//         <div className="max-w-7xl mx-auto px-4 text-center">
+//           <h1 className="text-4xl md:text-6xl font-bold mb-6">Venue</h1>
+//           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+//             IEM ICDC 2026 will be held in Kolkata, West Bengal - detailed venue information coming soon
+//           </p>
+//         </div>
+//       </div>
 
-      <Container className="flex flex-col items-center justify-center gap-12 py-20 mt-12 min-h-[60vh]">
+//       <Container className="flex flex-col items-center justify-center gap-12 py-20 mt-12 min-h-[60vh]">
         
-        {/* Coming Soon Section */}
-        <div className="w-full max-w-4xl text-center">
-          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100 p-12 md:p-16">
+//         {/* Coming Soon Section */}
+//         <div className="w-full max-w-4xl text-center">
+//           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100 p-12 md:p-16">
             
-            {/* Icon */}
-            <div className="flex justify-center mb-8">
-              <div className="bg-gradient-to-r from-red-500 to-red-600 p-6 rounded-full shadow-lg">
-                <MapPin className="w-12 h-12 text-white" />
-              </div>
-            </div>
+//             {/* Icon */}
+//             <div className="flex justify-center mb-8">
+//               <div className="bg-gradient-to-r from-red-500 to-red-600 p-6 rounded-full shadow-lg">
+//                 <MapPin className="w-12 h-12 text-white" />
+//               </div>
+//             </div>
 
-            {/* Main Message */}
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Venue Details Coming Soon
-            </h2>
+//             {/* Main Message */}
+//             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+//               Venue Details Coming Soon
+//             </h2>
             
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              IEM ICDC 2026 will be held in <span className="font-semibold text-red-600">Kolkata, West Bengal</span>. 
-              We are finalizing the perfect venue location and will share complete details including facilities, 
-              accessibility information, and directions very soon.
-            </p>
+//             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+//               IEM ICDC 2026 will be held in <span className="font-semibold text-red-600">Kolkata, West Bengal</span>. 
+//               We are finalizing the perfect venue location and will share complete details including facilities, 
+//               accessibility information, and directions very soon.
+//             </p>
 
-            {/* Location Confirmed */}
-            <div className="bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-xl p-6 mb-8">
-              <div className="flex items-center justify-center space-x-3 mb-3">
-                <MapPin className="w-6 h-6 text-red-600" />
-                <h3 className="text-xl font-bold text-red-800">Location Confirmed</h3>
-              </div>
-              <p className="text-red-700 font-medium text-lg">Kolkata, West Bengal, India</p>
-              <p className="text-red-600 text-sm mt-2">Specific venue address and facilities details coming soon</p>
-            </div>
+//             {/* Location Confirmed */}
+//             <div className="bg-gradient-to-r from-red-50 to-red-100 border border-red-200 rounded-xl p-6 mb-8">
+//               <div className="flex items-center justify-center space-x-3 mb-3">
+//                 <MapPin className="w-6 h-6 text-red-600" />
+//                 <h3 className="text-xl font-bold text-red-800">Location Confirmed</h3>
+//               </div>
+//               <p className="text-red-700 font-medium text-lg">Kolkata, West Bengal, India</p>
+//               <p className="text-red-600 text-sm mt-2">Specific venue address and facilities details coming soon</p>
+//             </div>
 
-            {/* Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-                <MapPin className="w-8 h-8 text-red-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Kolkata, West Bengal</h3>
-                <p className="text-gray-600 text-sm">City location confirmed</p>
-              </div>
+//             {/* Features */}
+//             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+//               <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+//                 <MapPin className="w-8 h-8 text-red-600 mx-auto mb-4" />
+//                 <h3 className="font-semibold text-gray-800 mb-2">Kolkata, West Bengal</h3>
+//                 <p className="text-gray-600 text-sm">City location confirmed</p>
+//               </div>
               
-              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-                <Calendar className="w-8 h-8 text-red-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">March 16-18, 2026</h3>
-                <p className="text-gray-600 text-sm">Conference dates confirmed</p>
-              </div>
+//               <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+//                 <Calendar className="w-8 h-8 text-red-600 mx-auto mb-4" />
+//                 <h3 className="font-semibold text-gray-800 mb-2">March 16-18, 2026</h3>
+//                 <p className="text-gray-600 text-sm">Conference dates confirmed</p>
+//               </div>
               
-              <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
-                <Clock className="w-8 h-8 text-red-600 mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-800 mb-2">Venue Details</h3>
-                <p className="text-gray-600 text-sm">Complete information coming soon</p>
-              </div>
-            </div>
+//               <div className="bg-white rounded-xl p-6 shadow-md border border-gray-100">
+//                 <Clock className="w-8 h-8 text-red-600 mx-auto mb-4" />
+//                 <h3 className="font-semibold text-gray-800 mb-2">Venue Details</h3>
+//                 <p className="text-gray-600 text-sm">Complete information coming soon</p>
+//               </div>
+//             </div>
 
-            {/* Call to Action */}
-            {/* <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">Want to Stay Updated?</h3>
-              <p className="text-red-100 mb-6">
-                Register now and be the first to know about venue details and other conference updates
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/registrations" 
-                  className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Register Now
-                </a>
-                <a 
-                  href="/papers" 
-                  className="bg-red-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Submit Paper
-                </a>
-              </div>
-            </div> */}
+//             {/* Call to Action */}
+//             {/* <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-8 text-white">
+//               <h3 className="text-xl font-bold mb-4">Want to Stay Updated?</h3>
+//               <p className="text-red-100 mb-6">
+//                 Register now and be the first to know about venue details and other conference updates
+//               </p>
+//               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+//                 <a 
+//                   href="/registrations" 
+//                   className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+//                 >
+//                   Register Now
+//                 </a>
+//                 <a 
+//                   href="/papers" 
+//                   className="bg-red-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl"
+//                 >
+//                   Submit Paper
+//                 </a>
+//               </div>
+//             </div> */}
 
-          </div>
-        </div>
+//           </div>
+//         </div>
 
-      </Container>
-    </>
-  );
-}
+//       </Container>
+//     </>
+//   );
+// }
 
-/*
+
 // Original venue content - commented out for now
 
 import Image from "next/image";
-import { Phone, Train, Plane, ExternalLink, Navigation } from "lucide-react";
+import { Phone, Train, Plane, ExternalLink, Navigation, MapPin, Car, Clock } from "lucide-react";
+import { Container } from "@/components/Container";
 
 export default function Venue() {
   const venueFeatures = [
@@ -121,7 +122,6 @@ export default function Venue() {
 
   return (
     <>
-      // Hero Section 
       <div className="bg-gradient-to-br from-red-600 via-red-700 to-black text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Venue</h1>
@@ -133,11 +133,11 @@ export default function Venue() {
 
       <Container className="flex flex-col items-center justify-start gap-12 py-12 mt-12">
         
-        // Venue Introduction 
+        {/* // Venue Introduction  */}
         <div className="w-full max-w-6xl">
           <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div className="flex lg:flex-row flex-col">
-              // Content 
+              {/* // Content  */}
               <div className="flex-1 p-8 md:p-12">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-3">
@@ -188,7 +188,7 @@ export default function Venue() {
                 </div>
               </div>
               
-              // Image 
+              {/* // Image  */}
               <div className="lg:w-96 bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center p-8">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-200/30 to-red-300/30 rounded-2xl blur-xl"></div>
@@ -205,10 +205,10 @@ export default function Venue() {
           </div>
         </div>
 
-        // Map and Contact Information 
-        <div className="w-full max-w-6xl grid lg:grid-cols-2 gap-8">
+        {/* // Map and Contact Information  */}
+        <div className="w-full max-w-6xl grid lg:grid-cols-1 gap-8">
           
-          // Interactive Map 
+          {/* // Interactive Map  */}
           <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
             <div className="bg-gradient-to-r from-gray-800 to-black p-6 text-white">
               <h3 className="text-xl font-bold mb-2">Location Map</h3>
@@ -226,66 +226,10 @@ export default function Venue() {
               />
             </div>
           </div>
-
-          // Contact Information 
-          <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-xl border border-gray-800 text-white p-8">
-            <h3 className="text-xl font-bold mb-6">Contact Information</h3>
-            
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="p-2 bg-red-600/20 rounded-lg text-red-400">
-                    {info.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white mb-1">{info.label}</h4>
-                    <p className="text-gray-300 text-sm leading-relaxed">{info.value}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            // Transportation Options 
-            <div className="mt-8 pt-6 border-t border-gray-700">
-              <h4 className="font-semibold text-white mb-4">How to Reach</h4>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3 text-sm text-gray-300">
-                  <Train className="w-4 h-4 text-red-400" />
-                  <span>Salt Lake Sector V Metro Station (10 mins walk)</span>
-                </div>
-                <div className="flex items-center space-x-3 text-sm text-gray-300">
-                  <Car className="w-4 h-4 text-green-400" />
-                  <span>Ample parking space available</span>
-                </div>
-                <div className="flex items-center space-x-3 text-sm text-gray-300">
-                  <Plane className="w-4 h-4 text-purple-400" />
-                  <span>30 minutes from Netaji Subhash Airport</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        // Call to Action 
-        <div className="w-full max-w-4xl">
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Plan Your Visit</h3>
-            <p className="text-red-100 mb-8 text-lg">
-              Make your conference experience memorable by planning ahead
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="/registrations" 
-                className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Register Now
-              </a>
-            </div>
-          </div>
         </div>
 
       </Container>
     </>
   );
 }
-*/
+

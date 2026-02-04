@@ -258,8 +258,6 @@ export default function Home() {
               <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Uemaru Wataru</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Associate Professor, Department of Electronics and Informatics, Ryukoku University, Kyoto, Japan.
-                <br />
-                <Link href={"https://www.oxy.edu"} className="text-red-500 hover:underline">https://www.oxy.edu</Link>
               </p>
             </div>
           </div>
