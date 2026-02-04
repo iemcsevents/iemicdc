@@ -89,11 +89,12 @@ const ModernTable = ({
 };
 
 
-const BankDetails = ({ title, icon, datas, headerColor }: {
+const BankDetails = ({ title, icon, datas, headerColor, qrCode }: {
   title: string;
   icon: React.ReactNode;
   datas: Array<{ col1: string; col2: string }>;
   headerColor: string;
+  qrCode?: string;
 }) => {
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300">
@@ -106,6 +107,17 @@ const BankDetails = ({ title, icon, datas, headerColor }: {
         </div>
       </div>
       <div className="p-6 space-y-4">
+        {/* Render QR Code if provided */}
+        {qrCode && (
+          <div className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl border border-dashed border-gray-300 mb-4">
+            <img 
+              src={qrCode} 
+              alt="Payment QR Code" 
+              className="w-48 h-48 object-contain rounded-lg shadow-sm"
+            />
+            <p className="text-xs text-gray-500 mt-2 font-medium">Scan to pay via UPI</p>
+          </div>
+        )}
         {datas.map(({ col1, col2 }, id) => (
           <div key={id} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
             <div>
@@ -201,12 +213,13 @@ export default function Registration() {
               title="Indian Payments (INR)"
               icon={<CreditCard className="w-6 h-6" />}
               headerColor="from-red-500 to-red-600"
+              qrCode="images/indian_payments_qr.png"
               datas={[
                 { col1: "In the Favour of", col2: "Institute of Engineering and Management Trust" },
-                { col1: "Bank Name", col2: "IDBI Bank" },
+                { col1: "Bank Name", col2: "Indian Overseas Bank" },
                 { col1: "Branch", col2: "Sector V, Kolkata" },
-                { col1: "A/C No", col2: "184104000054214" },
-                { col1: "IFSC Code", col2: "IBKL0000184" },
+                { col1: "A/C No", col2: "164201000000488" },
+                { col1: "IFSC Code", col2: "IOBA0001642" },
               ]}
             />
 
