@@ -332,7 +332,10 @@ export default function Home() {
           <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
             <Image src="/images/gdg_horizontal.png" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
           </div>
-
+          
+          <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
+            <Image src="/images/coe_logo.png" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
+          </div>
         </div>
       </div>
 
