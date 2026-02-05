@@ -176,6 +176,151 @@ export default function Home() {
 
       <Separator />
 
+      <div className="w-full max-w-6xl px-4">
+        <div className="relative overflow-hidden bg-white rounded-3xl shadow-2xl border border-gray-100">
+          <div className="flex flex-col lg:flex-row items-stretch">
+            {/* Image Section - Takes full height on large screens */}
+            <div className="lg:w-2/5 relative bg-gray-50 flex items-center justify-center p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-gray-100">
+              <div className="relative group">
+                {/* Subtle Frame Effect */}
+                <div className="absolute -inset-4 bg-gradient-to-tr from-red-500/10 to-transparent rounded-3xl blur-sm transition-all group-hover:blur-md"></div>
+
+                <div className="relative h-[300px] w-[300px] md:h-[350px] md:w-[350px] lg:h-[400px] lg:w-[400px]">
+                  <Image
+                    src="/images/guest_3.png"
+                    fill
+                    alt="Guest of honor"
+                    className="rounded-2xl object-cover object-top shadow-lg"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-3/5 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
+              {/* Header Section */}
+              <div className="mb-10 text-center lg:text-left">
+                {/* <span className="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-red-600 uppercase bg-red-50 rounded-full">
+                  Keynote Presentation
+                </span> */}
+                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+                  Guest of <span className="text-red-600">Honor</span>
+                </h2>
+                <div className="h-1.5 w-24 bg-gradient-to-r from-red-600 to-red-500 mt-4 rounded-full mx-auto lg:mx-0"></div>
+              </div>
+
+              {/* Credentials & Bio */}
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <h4 className="text-xl md:text-2xl font-bold text-gray-800">
+                    Debashis Sen
+                  </h4>
+                  <div className="space-y-1">
+                    <p className="text-lg font-semibold text-red-600/90 leading-tight">
+                      Former IAS officer (ex Additional Chief Secretary IT)
+                    </p>
+                    <p className="text-md font-medium text-gray-500 italic">
+                      Managing Director, HIDCO and Chairman, New Town DA
+                    </p>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  {/* Quote decoration */}
+                  <span className="absolute -top-4 -left-2 text-6xl text-gray-100 font-serif select-none pointer-events-none">“</span>
+                  <p className="text-gray-600 leading-relaxed text-base md:text-lg text-justify relative z-10">
+                    Experienced administrator with a demonstrated history of working in senior government positions.
+                    Skilled in Policy Formulation, Governance, Smart Cities, Information Technology Policy,
+                    Start Up Policy, Strategic Planning, and Public Administration. Strong professional expertise
+                    in city development, urban analysis and democracy. Trained at Harvard Business School
+                    and IMF Institute.
+                  </p>
+                </div>
+
+                {/* Call to Action or Invitation */}
+                <div className="pt-6 border-t border-gray-100">
+                  <p className="text-sm font-medium text-gray-500 italic">
+                    Joining us to share visionary perspectives on urban transformation and governance.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <Separator />
+
+      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 animate-on-scroll px-4 mx-auto py-12">
+
+        {/* Academic Excellence Honouree Section */}
+        <div className="flex flex-col items-center">
+          <div className="text-center space-y-4 mb-10">
+            <h3 className="md:text-4xl text-3xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+              Academic Excellence Honouree
+            </h3>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Centered card container */}
+          <div className="w-full flex justify-center">
+            <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-8 hover-lift hover:shadow-xl transition-all duration-300 max-w-sm w-full">
+              <div className="relative">
+                <Image
+                  src="/images/Guest (1).png"
+                  width={140}
+                  height={140}
+                  alt="Prof. Utpal Garain"
+                  className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold text-gray-800 text-xl mb-3">Prof. Utpal Garain</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  INAE Chair Professor, University of Calcutta, Rajabazar Campus, Kolkata, India
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Industry Leadership Honouree Section */}
+        <div className="flex flex-col items-center">
+          <div className="text-center space-y-4 mb-10">
+            <h3 className="md:text-4xl text-3xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+              Industry Leadership Honouree
+            </h3>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Centered card container */}
+          <div className="w-full flex justify-center">
+            <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-8 hover-lift hover:shadow-xl transition-all duration-300 max-w-sm w-full">
+              <div className="relative">
+                <Image
+                  src="/images/Guest (2).png"
+                  width={140}
+                  height={140}
+                  alt="Dr. Dipankar Chakrabarti"
+                  className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold text-gray-800 text-xl mb-3">Dr. Dipankar Chakrabarti</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Founder, CtoE Consultancy Services, Kolkata & Director, BDSCube Technology Pvt., Ltd., Kolkata
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <Separator />
+
       <div className="w-full max-w-7xl flex flex-col items-center justify-start gap-8 animate-on-scroll px-4">
         <div className="text-center space-y-4">
           <h1 className="w-full md:text-5xl text-3xl text-center text-primary font-bold fade-in bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
@@ -292,7 +437,17 @@ export default function Home() {
 
         {/* CHANGED: From flex to grid for better row/col control */}
         <div className="w-full max-w-6xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-8 place-items-center stagger-animation">
+          <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
+            <Image src="/images/math_works.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[60px] md:max-h-[110px] w-auto group-hover:scale-105 transition-transform duration-300" />
+          </div>
 
+          <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
+            <Image src="/images/ieee_tems.jpg" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
+          </div>
+
+          <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
+            <Image src="/images/gdg_horizontal.png" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
+          </div>
           <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
             <Image src="/images/logo2.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[60px] md:max-h-[110px] w-auto group-hover:scale-105 transition-transform duration-300" />
           </div>
@@ -325,14 +480,8 @@ export default function Home() {
             <Image src="/images/iem_rf.jpeg" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
           </div>
 
-          <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
-            <Image src="/images/ieee_tems.jpg" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
-          </div>
 
-          <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
-            <Image src="/images/gdg_horizontal.png" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          
+
           <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
             <Image src="/images/coe_logo.png" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
           </div>

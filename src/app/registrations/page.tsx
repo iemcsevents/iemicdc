@@ -2,6 +2,7 @@ import { Container } from "@/components/Container";
 import { CopyButton } from "@/components/CopyButton";
 import { CreditCard, DollarSign, FileText, Users, Clock, Shield } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Conference Registration - Fees & Payment",
@@ -53,23 +54,20 @@ const ModernTable = ({
               return (
                 <tr
                   key={id}
-                  className={`border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200 ${
-                    isTotalRow ? "font-extrabold text-gray-800 bg-gray-100" : ""
-                  }`}
+                  className={`border-b border-gray-100 hover:bg-gray-50 transition-colors duration-200 ${isTotalRow ? "font-extrabold text-gray-800 bg-gray-100" : ""
+                    }`}
                 >
                   <td
-                    className={`px-6 py-4 font-medium text-gray-700 text-xl ${
-                      className || ""
-                    }`}
+                    className={`px-6 py-4 font-medium text-gray-700 text-xl ${className || ""
+                      }`}
                   >
                     {col1}
                   </td>
                   <td
-                    className={`px-6 py-4 ${
-                      isTotalRow
-                        ? "font-extrabold text-gray-800"
-                        : "text-gray-800 font-semibold text-lg"
-                    }`}
+                    className={`px-6 py-4 ${isTotalRow
+                      ? "font-extrabold text-gray-800"
+                      : "text-gray-800 font-semibold text-lg"
+                      }`}
                   >
                     {col2 &&
                       !isTotalRow && (
@@ -89,12 +87,18 @@ const ModernTable = ({
 };
 
 
-const BankDetails = ({ title, icon, datas, headerColor, qrCode }: {
+const BankDetails = ({
+  title,
+  icon,
+  datas,
+  headerColor,
+  qrImage
+}: {
   title: string;
   icon: React.ReactNode;
   datas: Array<{ col1: string; col2: string }>;
   headerColor: string;
-  qrCode?: string;
+  qrImage?: string; // New optional prop
 }) => {
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300">
@@ -106,28 +110,40 @@ const BankDetails = ({ title, icon, datas, headerColor, qrCode }: {
           <h3 className="text-xl font-bold">{title}</h3>
         </div>
       </div>
-      <div className="p-6 space-y-4">
-        
-        {datas.map(({ col1, col2 }, id) => (
-          <div key={id} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
-            <div>
-              <div className="text-sm text-gray-600 mb-1">{col1}</div>
-              <div className="font-semibold text-gray-800">{col2}</div>
+
+      {/* Flex container to handle Text vs Image layout */}
+      <div className="p-6 flex flex-col md:flex-row gap-8 items-center md:items-start">
+
+        {/* Left Side: Bank Details List */}
+        <div className="space-y-4 flex-1 w-full">
+          {datas.map(({ col1, col2 }, id) => (
+            <div key={id} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl border border-gray-100">
+              <div>
+                <div className="text-sm text-gray-600 mb-1">{col1}</div>
+                <div className="font-semibold text-gray-800">{col2}</div>
+              </div>
+              {(col1.includes("A/C No") || col1.includes("IFSC")) && (
+                <CopyButton text={col2} />
+              )}
             </div>
-            {(col1.includes("A/C No") || col1.includes("IFSC")) && (
-              <CopyButton text={col2} />
-            )}
-          </div>
-        ))}
-        {/* Render QR Code if provided */}
-        {qrCode && (
-          <div className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl border border-dashed border-gray-300 mb-4">
-            <img 
-              src={qrCode} 
-              alt="Payment QR Code" 
-              className="w-48 h-48 object-contain rounded-lg shadow-sm"
-            />
-            <p className="text-xs text-gray-500 mt-2 font-medium">Scan to pay via UPI</p>
+          ))}
+        </div>
+
+        {/* Right Side: QR Code (Only if provided) */}
+        {qrImage && (
+          <div className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-gray-100 shadow-inner w-full md:w-auto self-stretch md:self-center">
+            <div className="relative p-2 bg-white rounded-lg shadow-sm border border-gray-50">
+              <Image
+                src={qrImage}
+                alt="Payment QR Code"
+                width={200}
+                height={200}
+                className="w-60 h-60 md:w-68 md:h-68 object-contain rounded-md"
+              />
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-[14px] text-gray-400 mt-2 uppercase tracking-widest">Scan to pay via UPI</p>
+            </div>
           </div>
         )}
       </div>
@@ -156,7 +172,7 @@ export default function Registration() {
       </div>
 
       <Container className="flex flex-col items-center justify-start gap-12 py-12 mt-12">
-        
+
         {/* Registration Categories Overview */}
         <div className="w-full max-w-6xl">
           <div className="text-center mb-2">
@@ -203,31 +219,18 @@ export default function Registration() {
         </div>
 
         {/* Payment Information */}
-        <div className="w-full max-w-6xl">
-          <div className="text-center mb-8">
+        <div className="w-full max-w-5xl">
+          <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Payment Information</h2>
             <p className="text-gray-600">Secure payment options for domestic and international participants</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="w-full">
             <BankDetails
-              title="Indian Payments (INR)"
+              title="Indian Payments (INR) / International Payments (USD)"
               icon={<CreditCard className="w-6 h-6" />}
               headerColor="from-red-500 to-red-600"
-              qrCode="images/indian_payments_qr.png"
-              datas={[
-                { col1: "In the Favour of", col2: "Institute of Engineering and Management Trust" },
-                { col1: "Bank Name", col2: "Indian Overseas Bank" },
-                { col1: "Branch", col2: "Sector V, Kolkata" },
-                { col1: "A/C No", col2: "164201000000488" },
-                { col1: "IFSC Code", col2: "IOBA0001642" },
-              ]}
-            />
-
-            <BankDetails
-              title="International Payments (USD)"
-              icon={<DollarSign className="w-6 h-6" />}
-              headerColor="from-green-500 to-green-600"
+              qrImage="/images/indian_payments_qr.png" // Pass your image path here
               datas={[
                 { col1: "In the Favour of", col2: "Institute of Engineering and Management Trust" },
                 { col1: "Bank Name", col2: "Indian Overseas Bank" },
