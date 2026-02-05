@@ -276,7 +276,7 @@ export default function Home() {
                 <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="text-center">
-                <h3 className="font-bold text-gray-800 text-xl mb-3">Prof. Utpal Garain</h3>
+                <h3 className="font-bold text-gray-800 text-xl mb-3">Debatosh Guha</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   INAE Chair Professor, University of Calcutta, Rajabazar Campus, Kolkata, India
                 </p>
