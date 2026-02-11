@@ -14,6 +14,7 @@
   "type": "module",
   "dependencies": {
     "clsx": "^2.1.1",
+    "fix-react2shell-next": "^1.1.4",
     "framer-motion": "^12.23.14",
     "i18n-iso-countries": "^7.14.0",
     "lucide-react": "^0.454.0",
