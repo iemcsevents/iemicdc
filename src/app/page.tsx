@@ -251,6 +251,40 @@ export default function Home() {
 
       <Separator />
 
+      <div className="w-full max-w-7xl flex flex-col items-center animate-on-scroll px-4 mx-auto py-12">
+        {/* Prof. Satyajit Chakrabarti Memorial Award... */}
+        <div className="flex flex-col items-center max-w-3xl">
+          <div className="text-center space-y-4 mb-10">
+            <h3 className="md:text-4xl text-3xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+              Prof. Satyajit Chakrabarti Memorial Award for Outstanding Contribution to Academics
+            </h3>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Centered card container */}
+          <div className="w-full flex justify-center">
+            <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-8 hover-lift hover:shadow-xl transition-all duration-300 max-w-sm w-full">
+              <div className="relative">
+                <Image
+                  src="/images/guest_4.png"
+                  width={140}
+                  height={140}
+                  alt="Prof. Utpal Garain"
+                  className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="text-center">
+                <h3 className="font-bold text-gray-800 text-xl mb-3">Prof. Nabanita Das</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Retired Professor at the Indian Statistical Institute, Kolkata
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 animate-on-scroll px-4 mx-auto pt-7 pb-2">
 
         {/* Academic Excellence Honouree Section */}
@@ -318,39 +352,8 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="w-full max-w-7xl flex flex-col items-center animate-on-scroll px-4 mx-auto py-12">
-        {/* Prof. Satyajit Chakrabarti Memorial Award... */}
-        <div className="flex flex-col items-center max-w-3xl">
-          <div className="text-center space-y-4 mb-10">
-            <h3 className="md:text-4xl text-3xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-              Prof. Satyajit Chakrabarti Memorial Award for Outstanding Contribution to Academics
-            </h3>
-            <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
-          </div>
 
-          {/* Centered card container */}
-          <div className="w-full flex justify-center">
-            <div className="group flex flex-col items-center justify-start gap-4 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg border border-gray-100 p-8 hover-lift hover:shadow-xl transition-all duration-300 max-w-sm w-full">
-              <div className="relative">
-                <Image
-                  src="/images/guest_4.png"
-                  width={140}
-                  height={140}
-                  alt="Prof. Utpal Garain"
-                  className="rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-              <div className="text-center">
-                <h3 className="font-bold text-gray-800 text-xl mb-3">Prof. Nabanita Das</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Retired Professor at the Indian Statistical Institute, Kolkata
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <Separator />
 
