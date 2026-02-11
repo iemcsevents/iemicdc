@@ -285,7 +285,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 animate-on-scroll px-4 mx-auto pt-7 pb-2">
+      <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 animate-on-scroll px-4 mx-auto pb-7 pt-2">
 
         {/* Academic Excellence Honouree Section */}
         <div className="flex flex-col items-center">
