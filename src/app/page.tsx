@@ -436,7 +436,7 @@ export default function Home() {
               <div className="absolute -inset-2 bg-gradient-to-r from-red-500/20 to-pink-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="text-center">
-              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Uemaru Wataru</h3>
+              <h3 className="font-bold text-primary text-lg md:text-xl mb-3">Dr. Uemura Wataru</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 Associate Professor, Department of Electronics and Informatics, Ryukoku University, Kyoto, Japan.
               </p>
