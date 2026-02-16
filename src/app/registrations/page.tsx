@@ -211,7 +211,7 @@ export default function Registration() {
               { col1: "Extra Page Charges (above 12 pages)", col2: "", className: "font-extrabold text-gray-800 bg-gray-100" },
               { col1: "Indian Author (per extra page)", col2: "₹400" },
               { col1: "Foreign Author (per extra page)", col2: "$50" },
-              { col1: "Participation Only (non-authors)", col2: "", className: "font-extrabold text-gray-800 bg-gray-100" },
+              { col1: "Participation Only", col2: "", className: "font-extrabold text-gray-800 bg-gray-100" },
               { col1: "Indian Participant", col2: "₹3,000" },
               { col1: "Foreign Participant", col2: "$100" },
             ]}
