@@ -150,6 +150,35 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Conference Schedule Highlight */}
+      <div className="w-full max-w-7xl px-4 flex justify-center">
+        <Link
+          href="/schedule#conference-schedule"
+          className="group relative inline-flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:bg-white/20 hover:shadow-[0_8px_40px_rgba(185,28,28,0.18)] hover:border-red-300/50 transition-all duration-300 hover:scale-[1.02]"
+          style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.25) 100%)" }}
+        >
+          {/* Pulsing dot */}
+          <span className="relative flex h-3 w-3 flex-shrink-0">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-60"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+          </span>
+
+          <span className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+            <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-600">Now Available</span>
+            <span className="hidden sm:block w-px h-4 bg-gray-300"></span>
+            <span className="text-base font-semibold text-gray-800 group-hover:text-red-700 transition-colors duration-200">
+              Conference Schedule — March 16–18, 2026
+            </span>
+          </span>
+
+          <span className="ml-auto flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-red-600/10 group-hover:bg-red-600/20 transition-colors duration-200">
+            <svg className="w-4 h-4 text-red-600 group-hover:translate-x-0.5 transition-transform duration-200" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </span>
+        </Link>
+      </div>
+
       {/* Welcome to IEM ICDC 2026 Section */}
       <div className="w-full max-w-7xl flex flex-col items-center space-y-12 px-4 py-16 bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl">
         <div className="text-center space-y-6">
@@ -614,6 +643,68 @@ export default function Home() {
           </Link>
         </div>
       </div> */}
+
+      {/* Pre-Conference Workshop Section */}
+      <div className="w-full max-w-7xl animate-on-scroll px-4">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-red-700 via-red-800 to-black shadow-2xl">
+          {/* Decorative background elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12 lg:p-16">
+            {/* Left Content */}
+            <div className="flex-1 text-white space-y-5">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-sm border border-white/20">
+                  Pre-Conference Workshop
+                </span>
+                <span className="bg-yellow-400/90 text-yellow-900 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                  March 16, 2026
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+                Workshop on Voice AI Agents &amp;{" "}
+                <span className="text-yellow-300">End-to-End Automation</span>{" "}
+                with n8n
+              </h2>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-xl">
+                A hands-on pre-conference workshop organized by{" "}
+                <span className="text-white font-semibold">GDGoC-IEM</span> and{" "}
+                <span className="text-white font-semibold">InnovAI CoE</span>.
+                Explore the future of intelligent automation — build voice-powered
+                AI agents and design end-to-end workflows using n8n.
+              </p>
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <span className="text-yellow-300 text-lg">🎙️</span>
+                  <span className="text-sm text-gray-200">Voice AI Agents</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <span className="text-yellow-300 text-lg">⚙️</span>
+                  <span className="text-sm text-gray-200">n8n Automation</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <span className="text-yellow-300 text-lg">🤝</span>
+                  <span className="text-sm text-gray-200">GDGoC-IEM &amp; InnovAI CoE</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right CTA */}
+            <div className="flex-shrink-0 flex flex-col items-center gap-4">
+              <Link
+                href="/schedule#pre-conference-workshop"
+                className="group inline-flex items-center gap-3 bg-white text-red-700 font-bold px-8 py-4 rounded-2xl shadow-lg hover:bg-yellow-400 hover:text-red-800 transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg"
+              >
+                Learn More
+                <span className="group-hover:translate-x-1 transition-transform duration-300 text-xl">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Separator />
 
       <div className="space-y-8 text-center w-full max-w-5xl animate-on-scroll px-4" id="importantDates">
         <div className="text-center space-y-4">

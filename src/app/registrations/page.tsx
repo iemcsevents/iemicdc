@@ -197,6 +197,32 @@ export default function Registration() {
           </div> */}
         </div>
 
+        {/* Participant Registration Link */}
+        <div className="w-full max-w-5xl">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <div className="bg-gradient-to-r from-red-600 to-red-800 px-8 py-5 flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <h3 className="text-white font-bold text-xl">Participant Registration</h3>
+                <p className="text-red-200 text-sm mt-1">Register as a participant (non-paper) for IEM ICDC 2026</p>
+              </div>
+            </div>
+            <div className="p-6 md:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div className="space-y-1">
+                <p className="text-gray-500 text-sm uppercase tracking-wider font-semibold">Registration Link</p>
+                <p className="text-gray-800 font-mono text-sm break-all">https://forms.office.com/r/hRVRy1Ywpg</p>
+              </div>
+              <a
+                href="https://forms.office.com/r/hRVRy1Ywpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 bg-gradient-to-r from-red-600 to-red-500 text-white font-bold px-8 py-3 rounded-xl hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                Register Now →
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Detailed Registration Fees */}
         <div className="w-full max-w-5xl">
           <ModernTable

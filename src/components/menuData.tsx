@@ -47,5 +47,11 @@ const menuData: MenuItem[] = [
     title: "Venue",
     path: "/venue",
     newTab: false,
+  },
+  {
+    id: 8,
+    title: "Schedule",
+    path: "/schedule",
+    newTab: false,
   }
 ];

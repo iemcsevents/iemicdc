@@ -56,6 +56,12 @@ const menuData: MenuItem[] = [
     newTab: false,
   },
   {
+    id: 9,
+    title: "Schedule",
+    path: "/schedule",
+    newTab: false,
+  },
+  {
     id: 8,
     title: "IEM-ICDC 2025",
     path: "https://2025.iemicdc.org",
