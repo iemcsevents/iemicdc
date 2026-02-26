@@ -98,7 +98,7 @@ export default function Schedule() {
                 <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
                   <MapPin className="w-7 h-7 text-red-600 mx-auto mb-3" />
                   <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Venue</div>
-                  <div className="font-bold text-gray-800">Software Technology Parks of India</div>
+                  <div className="font-bold text-gray-800">Godrej Genesis</div>
                 </div>
               </div>
 
