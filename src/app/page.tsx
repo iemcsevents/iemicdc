@@ -706,6 +706,67 @@ export default function Home() {
 
       <Separator />
 
+      {/* GENAI Panel Discussion */}
+      <div className="w-full max-w-7xl animate-on-scroll px-4">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-red-700 via-red-800 to-black shadow-2xl">
+          {/* Decorative background elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 p-8 md:p-12 lg:p-16">
+            {/* Left Content */}
+            <div className="flex-1 text-white space-y-5">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="bg-white/20 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider backdrop-blur-sm border border-white/20">
+                  Panel Discussion
+                </span>
+                <span className="bg-yellow-400/90 text-yellow-900 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                  March 17, 2026
+                </span>
+              </div>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+                From Innovation to Responsibility:{" "}
+                <span className="text-yellow-300">Can Generative AI Scale Ethically?</span>{" "}
+              </h2>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-xl">
+                How can organizations balance rapid GenAI innovation with {" "}
+                <span className="text-white font-semibold">governance</span>,
+                <span className="text-white font-semibold"> safety</span>, and{" "}
+                <span className="text-white font-semibold">regulatory compliance</span>.
+                without slowing competitive advantage?
+              </p>
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <span className="text-yellow-300 text-lg">⚖️</span>
+                  <span className="text-sm text-gray-200">AI Ethics</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <span className="text-yellow-300 text-lg">🛡️</span>
+                  <span className="text-sm text-gray-200">Governance & Safety</span>
+                </div>
+                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/20">
+                  <span className="text-yellow-300 text-lg">📈</span>
+                  <span className="text-sm text-gray-200">Scaling GenAI</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right CTA */}
+            <div className="flex-shrink-0 flex flex-col items-center gap-4">
+              <Link
+                href="/schedule#panel-discussion"
+                className="group inline-flex items-center gap-3 bg-white text-red-700 font-bold px-8 py-4 rounded-2xl shadow-lg hover:bg-yellow-400 hover:text-red-800 transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg"
+              >
+                Learn More
+                <span className="group-hover:translate-x-1 transition-transform duration-300 text-xl">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Separator />
+
       <div className="space-y-8 text-center w-full max-w-5xl animate-on-scroll px-4" id="importantDates">
         <div className="text-center space-y-4">
           <h1 className="md:text-5xl text-3xl font-bold text-primary fade-in bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">

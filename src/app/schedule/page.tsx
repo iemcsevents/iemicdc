@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import PanelDiscussionSection from "@/components/PanelDiscussionSection";
 import { Calendar, Clock, MapPin, Download, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -13,6 +14,8 @@ export const metadata: Metadata = {
     "n8n Automation",
     "GDGoC-IEM",
     "InnovAI CoE",
+    "Panel Discussion",
+    "Generative AI",
     "IEM ICDC 2026 Schedule",
   ],
   openGraph: {
@@ -143,7 +146,17 @@ export default function Schedule() {
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-200 to-transparent"></div>
         </div>
 
-        {/* ─── Section 2: Conference Schedule ─────────────────────────────────── */}
+        {/* ─── Section 2: Panel Discussion ─────────────────────────────── */}
+        <PanelDiscussionSection/>
+
+        {/* Divider */}
+        <div className="w-full max-w-5xl flex items-center gap-4">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-200 to-transparent"></div>
+          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-200 to-transparent"></div>
+        </div>
+
+        {/* ─── Section 3: Conference Schedule ─────────────────────────────────── */}
         <div id="conference-schedule" className="w-full max-w-5xl scroll-mt-24">
           {/* Section Header */}
           <div className="text-center space-y-4 mb-10">
