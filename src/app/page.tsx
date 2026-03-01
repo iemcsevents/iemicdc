@@ -484,8 +484,24 @@ export default function Home() {
           <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
         </div>
         <div className="w-full max-w-6xl flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-8 stagger-animation">
-          <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
-            <Image src="images/IEEE_kol_logo.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[60px] md:max-h-[110px] w-full group-hover:scale-105 transition-transform duration-300" />
+          <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100 flex items-center justify-center min-w-[220px] max-w-[280px]">
+            <Image src="images/IEEE_kol_logo.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[60px] md:max-h-[90px] w-auto group-hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </div>
+      
+      <Separator />
+
+      <div className="w-full max-w-7xl flex flex-col items-center justify-center gap-8 animate-on-scroll px-4">
+        <div className="text-center space-y-4">
+          <h1 className="w-full md:text-5xl text-3xl text-center text-primary font-bold fade-in bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+            Gold Sponsors
+          </h1>
+          <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
+        </div>
+        <div className="w-full max-w-6xl flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-8 stagger-animation">
+          <div className="group bg-[#ffed7b] p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-orange-200 flex items-center justify-center min-w-[220px] max-w-[280px]">
+            <Image src="images/VotalAI_Logo-Black.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[50px] md:max-h-[70px] w-auto group-hover:scale-105 transition-transform duration-300" />
           </div>
         </div>
       </div>
