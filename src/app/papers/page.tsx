@@ -125,7 +125,7 @@ export default function Papers() {
         {/* Key Information Cards */}
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Submit Paper */}
-          <div className="bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+          {/* <div className="bg-gradient-to-br from-blue-500 to-sky-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
             <Send className="w-10 h-10 mx-auto mb-3" />
             <h3 className="text-lg font-bold mb-1">Submit Paper</h3>
             <p className="text-blue-100 text-sm mb-3">Upload your research paper through EasyChair</p>
@@ -136,6 +136,21 @@ export default function Papers() {
               className="inline-block bg-white text-blue-700 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-blue-50 transition-all duration-300"
             >
               Submit Now →
+            </Link>
+          </div> */}
+
+          {/* PPT Template */}
+          <div id="ppt-template" className="bg-gradient-to-br from-green-500 to-sky-600 rounded-xl p-6 text-white text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Send className="w-10 h-10 mx-auto mb-3" />
+            <h3 className="text-lg font-bold mb-1">Presentation Template</h3>
+            <p className="text-blue-100 text-sm mb-3">Download the official presentation template for your paper</p>
+            <Link
+              href="https://docs.google.com/presentation/d/1WYPWdClCbrRcjhRJA-V4_cdGR2pYfitL/edit?usp=sharing&ouid=103301009156057410609&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-700 px-4 py-1.5 rounded-md font-semibold text-sm hover:bg-blue-50 transition-all duration-300"
+            >
+              Download →
             </Link>
           </div>
 
@@ -200,6 +215,8 @@ export default function Papers() {
               Download →
             </Link>
           </div>
+
+          
         </div>
 
         <div className="bg-blue-100/50 p-8 rounded-xl shadow-lg border border-blue-200 text-center">
