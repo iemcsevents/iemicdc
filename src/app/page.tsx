@@ -609,9 +609,18 @@ export default function Home() {
           </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
         </div>
-        <div className="w-full max-w-6xl flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-8 stagger-animation">
-          <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100 flex items-center justify-center min-w-[220px] max-w-[280px]">
-            <Image src="images/store_kol.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[60px] md:max-h-[90px] w-auto group-hover:scale-105 transition-transform duration-300" />
+        <div className="w-full max-w-6xl flex flex-col items-center justify-center gap-4 md:gap-8 stagger-animation">
+          {/* Added 'flex-col' and 'text-center' here */}
+          <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100 flex flex-col items-center justify-center min-w-[220px] max-w-[280px] text-center">
+            <Image 
+              src="images/store_kol.png" 
+              width={150} 
+              height={100} 
+              alt="Partner 1" 
+              className="object-contain max-h-[60px] md:max-h-[90px] w-auto group-hover:scale-105 transition-transform duration-300" 
+            />
+            {/* Removed 'ml-4', added 'mt-4' for vertical spacing */}
+            <span className="mt-4 font-semibold text-gray-800 text-sm">CUSTOM STORE 11 KOLKATA</span>
           </div>
         </div>
       </div>
