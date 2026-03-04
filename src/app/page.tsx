@@ -594,14 +594,28 @@ export default function Home() {
             <Image src="/images/iem_rf.jpeg" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
           </div>
 
-
-
           <div className="group w-full h-full flex items-center justify-center bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100">
             <Image src="/images/coe_logo.png" width={1280} height={639} alt="Technical Sponsor" className="object-contain max-h-[60px] md:max-h-[110px] w-auto rounded group-hover:scale-105 transition-transform duration-300" />
           </div>
         </div>
       </div>
 
+      <Separator />
+
+      <div className="w-full max-w-7xl flex flex-col items-center justify-center gap-8 animate-on-scroll px-4">
+        <div className="text-center space-y-4">
+          <h1 className="w-full md:text-5xl text-3xl text-center text-primary font-bold fade-in bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+            Sponsorship Partners
+          </h1>
+          <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
+        </div>
+        <div className="w-full max-w-6xl flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-8 stagger-animation">
+          <div className="group bg-white p-4 md:p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover-lift border border-gray-100 flex items-center justify-center min-w-[220px] max-w-[280px]">
+            <Image src="images/store_kol.png" width={150} height={100} alt="Partner 1" className="object-contain max-h-[60px] md:max-h-[90px] w-auto group-hover:scale-105 transition-transform duration-300" />
+          </div>
+        </div>
+      </div>
+      
       <Separator />
 
       <div className="w-full max-w-6xl space-y-8 animate-on-scroll px-4">
