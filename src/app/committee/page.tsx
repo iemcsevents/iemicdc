@@ -21,7 +21,7 @@ const committeeList = {
   "Committees": {
     "Patron": [
       "Mrs. Banani Chakrabarti, President, IEM-UEM Group",
-      "Dr. Satyajit Chakrabarti, Director, Institute of Engineering and Management, Kolkata",
+      "Dr. Satyajit Chakrabarti, Vice Chancellor, IEM-UEM Group",
       "Dr. Rajashree Paul, Director, IQAC, IEM-UEM Group"
     ],
     "General Chair": [
