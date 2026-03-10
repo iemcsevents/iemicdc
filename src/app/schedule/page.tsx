@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import PanelDiscussionSection from "@/components/PanelDiscussionSection";
+import PreConferenceWorkshop from "@/components/PreConferenceWorkshop";
 import { Calendar, Clock, MapPin, Download, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -43,8 +44,7 @@ export default function Schedule() {
       <Container className="flex flex-col items-center justify-start gap-16 py-16">
 
         {/* ─── Section 1: Pre-Conference Workshop ─────────────────────────────── */}
-        <div id="pre-conference-workshop" className="w-full max-w-5xl scroll-mt-24">
-          {/* Section Header */}
+        {/* <div id="pre-conference-workshop" className="w-full max-w-5xl scroll-mt-24">
           <div className="text-center space-y-4 mb-10">
             <span className="inline-block bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full uppercase tracking-wider">
               Pre-Conference Workshop
@@ -55,9 +55,8 @@ export default function Schedule() {
             <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
           </div>
 
-          {/* Main Workshop Card */}
           <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-            {/* Top banner */}
+
             <div className="bg-gradient-to-r from-red-700 to-red-900 px-8 py-5 flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <div className="bg-white/20 rounded-xl p-2">
@@ -71,7 +70,7 @@ export default function Schedule() {
             </div>
 
             <div className="p-8 md:p-10 space-y-8">
-              {/* Title & Organizers */}
+
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 leading-snug">
                   Workshop on:{" "}
@@ -86,7 +85,6 @@ export default function Schedule() {
                 </p>
               </div>
 
-              {/* Key Info Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                 <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
                   <Calendar className="w-7 h-7 text-red-600 mx-auto mb-3" />
@@ -105,7 +103,6 @@ export default function Schedule() {
                 </div>
               </div>
 
-              {/* Facilitator */}
               <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5">
                 <div className="bg-gradient-to-br from-red-100 to-red-50 p-3 rounded-xl flex-shrink-0">
                   <BookOpen className="w-6 h-6 text-red-600" />
@@ -117,7 +114,6 @@ export default function Schedule() {
                 </div>
               </div>
 
-              {/* Download Brochure */}
               <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-5">
                 <div className="text-white">
                   <h4 className="font-bold text-lg mb-1">Workshop Brochure</h4>
@@ -137,7 +133,9 @@ export default function Schedule() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <PreConferenceWorkshop/>
 
         {/* Divider */}
         <div className="w-full max-w-5xl flex items-center gap-4">
