@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import GenAiWorkshop from "@/components/GenAiWorkshop";
 import PanelDiscussionSection from "@/components/PanelDiscussionSection";
 import PreConferenceWorkshop from "@/components/PreConferenceWorkshop";
 import { Calendar, Clock, MapPin, Download, BookOpen } from "lucide-react";
@@ -144,7 +145,18 @@ export default function Schedule() {
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-200 to-transparent"></div>
         </div>
 
-        {/* ─── Section 2: Panel Discussion ─────────────────────────────── */}
+        {/* Section 2: GenAI Workshop */}
+
+        <GenAiWorkshop/>
+
+        {/* Divider */}
+        <div className="w-full max-w-5xl flex items-center gap-4">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-200 to-transparent"></div>
+          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-red-200 to-transparent"></div>
+        </div>
+
+        {/* ─── Section 3: Panel Discussion ─────────────────────────────── */}
         <PanelDiscussionSection/>
 
         {/* Divider */}

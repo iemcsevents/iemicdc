@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { BookOpen, Calendar, Clock, Download, MapPin, X } from "lucide-react";
+import { BookOpen, Calendar, Clock, Download, MapPin, X, Trophy, Sparkles, User } from "lucide-react";
 import Image from "next/image";
 
-export default function PreConferenceWorkshop() {
+export default function GenAiWorkshop() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Lock background scrolling when the modal is open
@@ -25,10 +25,10 @@ export default function PreConferenceWorkshop() {
                 {/* Section Header */}
                 <div className="text-center space-y-4 mb-10">
                     <span className="inline-block bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full uppercase tracking-wider">
-                        Pre-Conference Workshop
+                        GenAI Workshop
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-                        Voice AI Agents &amp; End-to-End Automation with n8n
+                        Applied GenAI: From Beginner to Builder
                     </h2>
                     <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
                 </div>
@@ -39,7 +39,7 @@ export default function PreConferenceWorkshop() {
                     <div className="bg-gradient-to-r from-red-700 to-red-900 px-8 py-5 flex flex-wrap items-center justify-between gap-4">
                         <div className="flex items-center gap-3">
                             <div className="bg-white/20 rounded-xl p-2">
-                                <BookOpen className="w-6 h-6 text-white" />
+                                <Sparkles className="w-6 h-6 text-white" />
                             </div>
                             <span className="text-white font-bold text-lg">Workshop Details</span>
                         </div>
@@ -54,49 +54,83 @@ export default function PreConferenceWorkshop() {
                             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 leading-snug">
                                 Workshop on:{" "}
                                 <span className="text-red-600">
-                                    Voice AI Agents &amp; End-to-End Automation with n8n
+                                    Applied GenAI: From Beginner to Builder
                                 </span>
                             </h3>
-                            <p className="text-gray-500 text-base">
-                                Organized by{" "}
-                                <span className="font-semibold text-gray-700">GDGoC-IEM</span> and{" "}
-                                <span className="font-semibold text-gray-700">InnovAI CoE</span>
+                            <p className="text-gray-500 text-base italic">
+                                Go Beyond Theory. Build Real Systems. Get Industry Internship.
                             </p>
                         </div>
 
                         {/* Key Info Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
-                                <Calendar className="w-7 h-7 text-red-600 mx-auto mb-3" />
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Date</div>
-                                <div className="font-bold text-gray-800">March 16, 2026</div>
+                                <Clock className="w-7 h-7 text-red-600 mx-auto mb-3" />
+                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Time</div>
+                                <div className="font-bold text-gray-800">10:00 AM – 1:00 PM</div>
                             </div>
                             <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
-                                <Clock className="w-7 h-7 text-red-600 mx-auto mb-3" />
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Mode</div>
-                                <div className="font-bold text-gray-800">Hands-on</div>
+                                <Trophy className="w-7 h-7 text-red-600 mx-auto mb-3" />
+                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Highlight</div>
+                                <div className="font-bold text-gray-800">Industry Internships</div>
                             </div>
                             <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
                                 <MapPin className="w-7 h-7 text-red-600 mx-auto mb-3" />
                                 <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Venue</div>
-                                <div className="font-bold text-gray-800">Godrej Genesis</div>
+                                <div className="font-bold text-gray-800">Godrej Genesis, 15th Floor</div>
                             </div>
                         </div>
 
-                        {/* Facilitator */}
-                        <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5">
-                            <div className="bg-gradient-to-br from-red-100 to-red-50 p-3 rounded-xl flex-shrink-0">
-                                <BookOpen className="w-6 h-6 text-red-600" />
+                        {/* Highlight Section from Flyer */}
+                        <div className="bg-red-50 border border-red-100 rounded-2xl p-6 space-y-4">
+                            <div className="flex items-start gap-4">
+                                <div className="bg-yellow-400 p-2 rounded-lg shadow-sm">
+                                    <Trophy className="w-5 h-5 text-yellow-900" />
+                                </div>
+                                <p className="text-gray-800 font-medium">
+                                    <span className="font-bold text-red-700">Top 3 participants</span> win an exclusive <span className="bg-yellow-200 px-1">Industry Internship</span>.
+                                </p>
                             </div>
-                            <div>
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Facilitator</div>
-                                <div className="font-bold text-gray-800 text-lg">Debaditya Banerji</div>
-                                <div className="text-gray-500 text-sm">CEO &amp; Founder, AdiSync AI</div>
+                            <div className="flex items-center gap-4">
+                                <div className="bg-red-600 p-2 rounded-lg shadow-sm">
+                                    <Sparkles className="w-5 h-5 text-white" />
+                                </div>
+                                <p className="text-gray-800 font-medium">
+                                    Limited to the <span className="font-bold">First 50 Participants</span> only.
+                                </p>
                             </div>
                         </div>
 
-                        {/* Clickable Flyer Image */}
-                        {/* <div
+                        {/* Facilitators & Closing Keynote */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5">
+                                <div className="bg-gradient-to-br from-red-100 to-red-50 p-3 rounded-xl flex-shrink-0">
+                                    <BookOpen className="w-6 h-6 text-red-600" />
+                                </div>
+                                <div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Conducted By</div>
+                                    <div className="font-bold text-gray-800 text-lg">GenAI CoE Student Leads</div>
+                                </div>
+                            </div>
+                            <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5">
+                                <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-3 rounded-xl flex-shrink-0">
+                                    <User className="w-6 h-6 text-gray-700" />
+                                </div>
+                                <div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Special Address</div>
+                                    <div className="font-bold text-gray-800 text-lg">Paromita Ghosh</div>
+                                    <div className="text-gray-500 text-sm">GM Ericsson</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Precursor Note */}
+                        <div className="border-l-4 border-red-600 pl-4 py-2 italic text-gray-600 text-sm bg-gray-50 rounded-r-xl">
+                            This workshop serves as a precursor to the International Conference on Computational Intelligence, Data Science and Cloud Computing (ICDC 2026).
+                        </div>
+
+                        {/* Flyer Trigger Section */}
+                        <div
                             className="relative group cursor-pointer overflow-hidden rounded-2xl border border-gray-200 shadow-sm transition-all hover:shadow-md max-w-sm mx-auto"
                             onClick={() => setIsModalOpen(true)}
                         >
@@ -112,7 +146,7 @@ export default function PreConferenceWorkshop() {
                                     Click to Enlarge
                                 </span>
                             </div>
-                        </div> */}
+                        </div>
 
                         {/* Download Brochure */}
                         <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-5">
@@ -123,7 +157,7 @@ export default function PreConferenceWorkshop() {
                                 </p>
                             </div>
                             <a
-                                href="/documents/gdg workshop-1.pdf"
+                                href="/images/workshop.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex-shrink-0 flex items-center gap-2 bg-white text-red-700 font-bold px-6 py-3 rounded-xl hover:bg-yellow-400 hover:text-red-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
@@ -135,8 +169,9 @@ export default function PreConferenceWorkshop() {
                     </div>
                 </div>
             </div>
+
             {/* Fullscreen Image Modal */}
-            {/* {isModalOpen && (
+            {isModalOpen && (
                 <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-8 overscroll-contain"
                     onClick={() => setIsModalOpen(false)}
@@ -157,7 +192,7 @@ export default function PreConferenceWorkshop() {
                         onClick={(e) => e.stopPropagation()}
                     />
                 </div>
-            )} */}
+            )}
         </div>
     );
 }
