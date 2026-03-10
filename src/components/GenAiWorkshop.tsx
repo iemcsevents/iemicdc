@@ -21,7 +21,7 @@ export default function GenAiWorkshop() {
 
     return (
         <div>
-            <div id="pre-conference-workshop" className="w-full max-w-5xl scroll-mt-24">
+            <div id="genai-workshop" className="w-full max-w-5xl scroll-mt-24">
                 {/* Section Header */}
                 <div className="text-center space-y-4 mb-10">
                     <span className="inline-block bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full uppercase tracking-wider">
