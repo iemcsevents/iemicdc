@@ -151,7 +151,9 @@ const committeeList = {
       "Mr. Pinaki Karmakar, Institute of Engineering and Management, Kolkata, India",
       "Mr. Amit Kumar Roy, Institute of Engineering and Management, Kolkata, India",
       "Mr. Aishik Das, Institute of Engineering and Management, Kolkata, India",
-      
+      "Dr. Sourav Malakar, Institute of Engineering and Management, Kolkata, India",
+      "Ms. Sipra Singh, Institute of Engineering and Management, Kolkata, India",
+      "Ms. Karabi Konar, Institute of Engineering and Management, Kolkata, India",
     ]
   },
 }
