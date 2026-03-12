@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { BookOpen, Calendar, Clock, Download, MapPin, X, Trophy, Sparkles, User } from "lucide-react";
+import { BookOpen, Calendar, Clock, Download, MapPin, X, Trophy, Sparkles, User, BadgeCheck } from "lucide-react";
 import Image from "next/image";
 
-export default function GenAiWorkshop() {
+export default function GDGBootcamp() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     // Lock background scrolling when the modal is open
@@ -25,10 +25,10 @@ export default function GenAiWorkshop() {
                 {/* Section Header */}
                 <div className="text-center space-y-4 mb-10">
                     <span className="inline-block bg-red-100 text-red-700 text-sm font-bold px-4 py-2 rounded-full uppercase tracking-wider">
-                        GenAI Workshop
+                        Web3 Bootcamp
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
-                        Applied GenAI: From Beginner to Builder
+                        Build On Steller Bootcamp
                     </h2>
                     <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
                 </div>
@@ -41,10 +41,10 @@ export default function GenAiWorkshop() {
                             <div className="bg-white/20 rounded-xl p-2">
                                 <Sparkles className="w-6 h-6 text-white" />
                             </div>
-                            <span className="text-white font-bold text-lg">Workshop Details</span>
+                            <span className="text-white font-bold text-lg">Bootcamp Details</span>
                         </div>
                         <span className="bg-yellow-400 text-yellow-900 font-bold px-4 py-1.5 rounded-full text-sm">
-                            March 16, 2026
+                            March 15th & 16th, 2026
                         </span>
                     </div>
 
@@ -52,81 +52,77 @@ export default function GenAiWorkshop() {
                         {/* Title & Organizers */}
                         <div>
                             <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 leading-snug">
-                                Workshop on:{" "}
+                                Bootcamp on:{" "}
                                 <span className="text-red-600">
-                                    Applied GenAI: From Beginner to Builder
+                                    Build On Steller Bootcamp
                                 </span>
                             </h3>
-                            <p className="text-gray-500 text-base italic">
-                                Go Beyond Theory. Build Real Systems. Get Industry Internship.
+                            <p className="text-gray-500 text-base">
+                                Organized by{" "}
+                                <span className="font-semibold text-gray-700">Google Developer Group On Campus (IEM)</span>
                             </p>
                         </div>
 
                         {/* Key Info Grid */}
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                             <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
-                                <Clock className="w-7 h-7 text-red-600 mx-auto mb-3" />
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Time</div>
-                                <div className="font-bold text-gray-800">10:00 AM – 1:00 PM</div>
+                                <Calendar className="w-7 h-7 text-red-600 mx-auto mb-3" />
+                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Date</div>
+                                <div className="font-bold text-gray-800 text-sm">15th & 16th March</div>
                             </div>
                             <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
-                                <Trophy className="w-7 h-7 text-red-600 mx-auto mb-3" />
-                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Highlight</div>
-                                <div className="font-bold text-gray-800">Industry Internships</div>
+                                <Clock className="w-7 h-7 text-red-600 mx-auto mb-3" />
+                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Feature</div>
+                                <div className="font-bold text-gray-800 text-sm">Hands-on Web3</div>
                             </div>
                             <div className="bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-5 text-center">
                                 <MapPin className="w-7 h-7 text-red-600 mx-auto mb-3" />
                                 <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Venue</div>
-                                <div className="font-bold text-gray-800">Godrej Genesis, 15th Floor</div>
+                                <div className="font-bold text-gray-800 text-xs">IEDC CSE IEM, 10th Floor</div>
                             </div>
                         </div>
 
-                        {/* Highlight Section from Flyer */}
-                        <div className="bg-red-50 border border-red-100 rounded-2xl p-6 space-y-4">
-                            <div className="flex items-start gap-4">
-                                <div className="bg-yellow-400 p-2 rounded-lg shadow-sm">
-                                    <Trophy className="w-5 h-5 text-yellow-900" />
-                                </div>
-                                <p className="text-gray-800 font-medium">
-                                    <span className="font-bold text-red-700">Top 3 participants</span> win an exclusive <span className="bg-yellow-200 px-1">Industry Internship</span>.
-                                </p>
-                            </div>
-                            <div className="flex items-center gap-4">
-                                <div className="bg-red-600 p-2 rounded-lg shadow-sm">
-                                    <Sparkles className="w-5 h-5 text-white" />
-                                </div>
-                                <p className="text-gray-800 font-medium">
-                                    Limited to the <span className="font-bold">First 50 Participants</span> only.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Facilitators & Closing Keynote */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                            <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5">
-                                <div className="bg-gradient-to-br from-red-100 to-red-50 p-3 rounded-xl flex-shrink-0">
-                                    <BookOpen className="w-6 h-6 text-red-600" />
+                        {/* Speaker & Benefits Section */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 flex items-center gap-5">
+                                <div className="bg-red-100 p-3 rounded-xl flex-shrink-0">
+                                    <User className="w-6 h-6 text-red-600" />
                                 </div>
                                 <div>
-                                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Conducted By</div>
-                                    <div className="font-bold text-gray-800 text-lg">GenAI CoE Student Leads</div>
+                                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Speaker</div>
+                                    <div className="font-bold text-gray-800 text-lg">Debanjan Mondal</div>
+                                    <div className="text-red-600 text-sm font-medium">Devrel Engineer @Rise In</div>
                                 </div>
                             </div>
-                            <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-6 flex items-center gap-5">
-                                <div className="bg-gradient-to-br from-gray-200 to-gray-100 p-3 rounded-xl flex-shrink-0">
-                                    <User className="w-6 h-6 text-gray-700" />
+                            <div className="bg-slate-900 border border-slate-700 rounded-2xl p-6 flex items-center gap-5">
+                                <div className="bg-yellow-400 p-3 rounded-xl flex-shrink-0">
+                                    <BadgeCheck className="w-6 h-6 text-yellow-900" />
                                 </div>
                                 <div>
-                                    <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Special Address</div>
-                                    <div className="font-bold text-gray-800 text-lg">Paromita Ghosh</div>
-                                    <div className="text-gray-500 text-sm">GM Ericsson</div>
+                                    <div className="text-xs text-gray-400 uppercase tracking-wider mb-1">Reward</div>
+                                    <div className="font-bold text-white text-lg leading-tight">SpecialGraduation Certificate</div>
+                                    <div className="text-gray-400 text-sm">Stellar Branded T-Shirts for Top Performer</div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Precursor Note */}
-                        <div className="border-l-4 border-red-600 pl-4 py-2 italic text-gray-600 text-sm bg-gray-50 rounded-r-xl">
-                            This workshop serves as a precursor to the International Conference on Computational Intelligence, Data Science and Cloud Computing (ICDC 2026).
+                        {/* What You'll Get Section */}
+                        <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+                            <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2 decoration-red-500">
+                                <BookOpen className="w-5 h-5 text-red-600" />
+                                What You&apos;ll Get
+                            </h4>
+                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-gray-600">
+                                <li className="flex items-center gap-2">🔹 Mentorship from Ecosystem Experts</li>
+                                <li className="flex items-center gap-2">🔹 Hands-on project building</li>
+                                <li className="flex items-center gap-2">🔹 Free Food & Refreshments</li>
+                                <li className="flex items-center gap-2">🔹 Networking with Founders</li>
+                            </ul>
+                        </div>
+
+                        {/* Location Details Footer */}
+                        <div className="bg-slate-50 border-l-4 border-red-600 p-4 italic text-gray-600 text-[13px] leading-relaxed">
+                            <strong>Location:</strong> IEDC CSE IEM, 10th floor, Godrej Genesis Building, EP Block, Saltlake Sector V
                         </div>
 
                         {/* Flyer Trigger Section */}
@@ -137,7 +133,7 @@ export default function GenAiWorkshop() {
                             <Image
                                 width={2318}
                                 height={3000}
-                                src="/images/workshop.jpeg"
+                                src="/images/gdg_bootcamp.jpeg"
                                 alt="Workshop Flyer"
                                 className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
                             />
@@ -157,10 +153,10 @@ export default function GenAiWorkshop() {
                                 </p>
                             </div>
                             <a
-                                href="/images/workshop.jpeg"
+                                href="/images/gdg_bootcamp.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                download="Workshop_Flyer.jpeg"
+                                download="GDG_Bootcamp_Flyer.jpeg"
                                 className="flex-shrink-0 flex items-center gap-2 bg-white text-red-700 font-bold px-6 py-3 rounded-xl hover:bg-yellow-400 hover:text-red-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                             >
                                 <Download className="w-5 h-5" />
@@ -187,7 +183,7 @@ export default function GenAiWorkshop() {
                     <Image
                         width={2318}
                         height={3000}
-                        src="/images/workshop.jpeg"
+                        src="/images/gdg_bootcamp.jpeg"
                         alt="Workshop Flyer Fullscreen"
                         className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
