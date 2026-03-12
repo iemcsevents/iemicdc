@@ -160,22 +160,6 @@ export default function Schedule() {
           </div>
         </div>
 
-        {/* CTA row */}
-        <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/registrations"
-            className="flex-1 sm:flex-none text-center bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-red-700 hover:to-red-600 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            Register Now
-          </a>
-          <a
-            href="/papers"
-            className="flex-1 sm:flex-none text-center bg-white text-red-600 border-2 border-red-600 px-8 py-3 rounded-xl font-semibold hover:bg-red-50 transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            View Paper Tracks
-          </a>
-        </div>
-
       </Container>
     </>
   );
