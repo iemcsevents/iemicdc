@@ -19,7 +19,7 @@ export const Footer = () => {
                 className="object-contain"
               />
               <div>
-                <h3 className="font-bold text-xl">IEM ICDC 2026</h3>
+                <h3 className="font-bold text-xl">IEM ICDC 2027</h3>
                 <p className="text-gray-300 text-sm">International Conference</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
             </p>
             <div className="space-y-2 text-sm">
               <p className="text-gray-300">Institute of Engineering & Management</p>
-              <p className="text-gray-300">March 16-18, 2026</p>
+              <p className="text-gray-300">March 17-19, 2027</p>
               <a 
                 href="mailto:icdc@iem.edu.in" 
                 className="text-gray-300 hover:text-white transition-colors block"
@@ -108,18 +108,22 @@ export const Footer = () => {
 
             <div className="space-y-4">
               <h4 className="font-semibold text-lg">Important Dates</h4>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-3 text-sm">
                 <div>
-                  <p className="text-gray-400">Paper Submission Deadline</p>
-                  <p className="text-red-400 font-semibold">Submission Closed</p>
+                  <p className="text-gray-300">Full paper submission:</p>
+                  <p className="text-purple-400 font-semibold">December 10, 2026</p>
                 </div>
                 <div>
-                  <p className="text-gray-400">Notification of Acceptance</p>
-                  <p className="font-semibold">February 4, 2026</p>
+                  <p className="text-gray-300">Acceptance notification:</p>
+                  <p className="text-purple-400 font-semibold">February 04, 2027</p>
                 </div>
                 <div>
-                  <p className="text-gray-400">Conference Dates</p>
-                  <p className="font-semibold">March 16-18, 2026</p>
+                  <p className="text-gray-300">Registration:</p>
+                  <p className="text-purple-400 font-semibold">February 10, 2027</p>
+                </div>
+                <div>
+                  <p className="text-gray-300">Camera-ready paper submission:</p>
+                  <p className="text-purple-400 font-semibold">February 20, 2027</p>
                 </div>
               </div>
             </div>
@@ -130,16 +134,16 @@ export const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2026 IEM ICDC. All rights reserved.
+              © 2027 IEM ICDC. All rights reserved.
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-400">
               <span>Designed and Developed by</span>
-              <Link href="https://linkedin.com/in/debanurag" target="_blank" className="text-red-400 hover:text-red-300 transition-colors">
+              <Link href="https://linkedin.com/in/debanurag" target="_blank" className="text-purple-400 hover:text-purple-300 transition-colors">
                 Anurag Deb
               </Link>
               <span>and</span>
-              <Link href="http://linkedin.com/in/kartik-tulsian-682a6128a/" target="_blank" className="text-red-400 hover:text-red-300 transition-colors">
-                Kartik Tulsian
+              <Link href="https://www.linkedin.com/in/saraswata-chatterjee-b560972b3/" target="_blank" className="text-purple-400 hover:text-purple-300 transition-colors">
+                Saraswata Chatterjee
               </Link>
             </div>
           </div>

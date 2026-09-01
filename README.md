@@ -1,4 +1,4 @@
-# IEM ICDC 2026 - International Conference Website
+# IEM ICDC 2027 - International Conference Website
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.1.1-blue?style=flat-square&logo=react)](https://reactjs.org/)
@@ -7,10 +7,10 @@
 
 ## 🎯 About
 
-**IEM ICDC 2026: International Conference on Computational Intelligence, Data Science and Cloud Computing** is the official website for the fourth edition of this premier academic conference. Organized by the Institute of Engineering & Management, Kolkata, this conference brings together leading researchers, industry experts, and innovators from around the world.
+**IEM ICDC 2027: International Conference on Computational Intelligence, Data Science and Cloud Computing** is the official website for the fifth edition of this premier academic conference. Organized by the Institute of Engineering & Management, Kolkata, this conference brings together leading researchers, industry experts, and innovators from around the world.
 
 ### 📅 Conference Details
-- **Dates**: March 16-18, 2026
+- **Dates**: March 17-19, 2027
 - **Location**: Kolkata, West Bengal, India
 - **Organizers**: Department of Information Technology & Department of Computer Science & Engineering, IEM Kolkata
 
@@ -18,9 +18,9 @@
 
 - **Modern Design**: Built with Next.js 15 and React 19 for optimal performance
 - **Responsive Layout**: Fully responsive design optimized for all devices
-- **Dynamic Content**: Interactive hero carousel with conference imagery
+- **Dynamic Content**: Interactive hero marquee gallery and lightbox
 - **SEO Optimized**: Comprehensive metadata and structured content
-- **Professional UI**: Clean, academic-focused design with red-black gradient theme
+- **Professional UI**: Clean, academic-focused modern design with a purple-indigo gradient bento theme
 - **Performance Focused**: Optimized images, fonts, and loading strategies
 
 ## 🎯 Conference Tracks
@@ -124,10 +124,10 @@ Conference information is managed through:
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary**: Red gradient (`from-red-600 to-red-500`)
-- **Secondary**: Black to dark gray gradients
-- **Accent**: Yellow/Gold for highlights
-- **Background**: White to light gray gradients
+- **Primary**: Purple/Indigo gradients (`from-purple-900 to-indigo-900`)
+- **Secondary**: Glassmorphic white and black bases
+- **Accent**: Emerald, Blue, Orange for tech domains
+- **Background**: Light gray gradients (`from-gray-50 to-white`)
 
 ### Typography
 - **Primary Font**: Lato (Google Fonts)
@@ -198,7 +198,7 @@ pnpm start
 
 ## 📄 License
 
-This project is developed for IEM ICDC 2026. All rights reserved.
+This project is developed for IEM ICDC 2027. All rights reserved.
 
 ---
 

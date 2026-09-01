@@ -10,6 +10,7 @@ type MenuItem = {
   title: string;
   path?: string;
   newTab: boolean;
+  submenu?: MenuItem[];
 };
 
 const menuData: MenuItem[] = [
@@ -63,23 +64,33 @@ const menuData: MenuItem[] = [
   },
   {
     id: 8,
-    title: "IEM-ICDC 2025",
-    path: "https://2025.iemicdc.org",
-    newTab: true,
+    title: "Previous Editions",
+    newTab: false,
+    submenu: [
+      {
+        id: 91,
+        title: "IEM ICDC 2026",
+        path: "https://2026.iemicdc.org",
+        newTab: true,
+      },
+      {
+        id: 92,
+        title: "IEM ICDC 2025",
+        path: "https://2025.iemicdc.org",
+        newTab: true,
+      },
+    ],
   }
 ];
 
 const Header = () => {
   const menuRef = useRef<HTMLUListElement>(null);
-
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
   const pathname = usePathname();
 
-  const toggleBarColor = "bg-[--primary]";
-
   const handleStickyNavbar = () => {
-    setSticky(window.scrollY >= 80);
+    setSticky(window.scrollY >= 20);
   };
 
   useEffect(() => {
@@ -90,111 +101,110 @@ const Header = () => {
   const navbarToggleHandler = () => setNavbarOpen(!navbarOpen);
 
   return (
-    <div>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
-        <div className="w-full max-w-screen-2xl mx-auto flex flex-wrap items-center justify-between lg:justify-around px-2 py-2 md:py-2 lg:flex-nowrap gap-y-2 min-w-0 overflow-visible relative">
-          {/* Left Logos */}
-          <div className="flex items-center lg:gap-2 xl:gap-5 gap-0">
-            <Link href="/" className="flex items-center xl:gap-4 lg-gap-2">
-              <Image
-                src="/images/logo-no-bg.png"
-                alt="IEM ICDC Logo"
-                width={1500}
-                height={1500}
-                priority
-                quality={100}
-                className="h-[8vh] md:h-[9vh] lg:h-[13vh] sm:h-[7vh] w-auto max-w-[9rem] sm:max-w-[6rem] md:max-w-[10rem] lg:max-w-[10rem] xl:max-w-[14rem] object-contain"
-              />
+    <div className="flex justify-center w-full relative z-50">
+      <header className={`fixed transition-all duration-500 w-full max-w-7xl px-4 md:px-6 ${
+        sticky ? "top-4" : "top-6 md:top-8"
+      }`}>
+        <div className={`w-full flex items-center justify-between transition-all duration-500 px-4 py-2 ${
+          sticky 
+            ? "bg-white/80 backdrop-blur-xl shadow-lg shadow-purple-500/10 border border-white/50 rounded-full" 
+            : "bg-white/95 backdrop-blur-md shadow-2xl shadow-purple-900/10 border border-purple-100 rounded-[2.5rem]"
+        }`}>
+          {/* Left: Logos */}
+          <div className="flex items-center gap-3 md:gap-5">
+            <Link href="/" className="flex items-center">
+              <div className="relative w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-inner border border-gray-100 transition-transform hover:scale-105">
+                <Image
+                  src="/images/logo.png"
+                  alt="IEM ICDC 2027 Logo"
+                  fill
+                  priority
+                  className="object-contain p-1.5"
+                />
+              </div>
             </Link>
-            <div className="flex flex-col items-center">
+            
+            <div className="hidden sm:flex items-center gap-3 border-l border-gray-200 pl-3 md:pl-5">
               <Image
                 src="/images/sp.png"
                 alt="Springer"
                 width={812}
                 height={318}
-                priority
-                quality={100}
-                className="sm:h-[6vh] md:h-[6vh] lg:h-[6vh] xl:h-[7vh] h-[4.4vh] w-auto max-w-[5rem] sm:max-w-[6rem] md:max-w-[7rem] lg:max-w-[7rem] xl:max-w-[8rem] object-contain rounded-lg"
+                className="h-7 md:h-9 w-auto object-contain"
               />
-            </div>
-
-            {/* IEM & UEM logos on small/medium */}
-            <div className="flex lg:hidden items-center gap-1 lg:gap-1 pl-1 flex-shrink-0">
-              <>
-                <Image
-                  src="/images/iem-logo.png"
-                  alt="IEM Logo"
-                  width={1500}
-                  height={1003}
-                  quality={100}
-                  priority
-                  className="h-[5.5vh] sm:h-[6vh] md:h-[8vh] w-auto object-contain max-w-[5rem] sm:max-w-[5rem] md:max-w-[6rem]"
-                />
-                <Image
-                  src="/images/uem-logo.png"
-                  alt="UEM Logo"
-                  width={1500}
-                  height={1003}
-                  quality={100}
-                  priority
-                  className="h-[5.5vh] sm:h-[6vh] md:h-[8vh] w-auto object-contain max-w-[5rem] sm:max-w-[5rem] md:max-w-[6rem]"
-                />
-              </>
             </div>
           </div>
 
-          {/* Navbar toggle (Mobile) */}
-          <div className="lg:hidden ml-auto pl-1">
+          {/* Mobile Toggle Button */}
+          <div className="lg:hidden flex items-center">
             <button
               onClick={navbarToggleHandler}
-              className="block rounded p-2 focus:outline-none focus:ring-2 focus:ring-[#f74a5e]"
+              className="p-2 rounded-full bg-purple-50 text-purple-600 hover:bg-purple-100 transition-colors focus:outline-none"
             >
-              <span
-                className={`block h-0.5 w-6 ${toggleBarColor} transition-transform ${navbarOpen ? "rotate-45 translate-y-1.5" : ""
-                  }`}
-              />
-              <span
-                className={`block h-0.5 w-6 ${toggleBarColor} my-1 transition-opacity ${navbarOpen ? "opacity-0" : ""
-                  }`}
-              />
-              <span
-                className={`block h-0.5 w-6 ${toggleBarColor} transition-transform ${navbarOpen ? "-rotate-45 -translate-y-1.5" : ""
-                  }`}
-              />
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {navbarOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
             </button>
           </div>
 
-          {/* Navigation (No Submenu) */}
-          <nav
-            className={`w-full transition-all duration-300 ease-in-out ${navbarOpen
-                ? "block bg-gray-50 mt-4 p-4 rounded-md shadow-md lg:bg-transparent"
-                : "hidden lg:block"
-              } lg:w-auto lg:p-0`}
-          >
-            <ul
-              ref={menuRef}
-              className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-2 xl:gap-4 lg:space-x-1 lg:mr-2"
-            >
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+            <ul ref={menuRef} className="flex items-center gap-1">
               {menuData.map((menuItem, index) => (
-                <li key={index}>
-                  {menuItem.newTab ? (
+                <li key={index} className="relative group">
+                  {menuItem.submenu ? (
+                    <>
+                      <button className="flex items-center gap-1.5 py-2 px-3 lg:px-4 text-[0.95rem] font-semibold text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-full transition-all">
+                        {menuItem.title}
+                        <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                      </button>
+                      <ul className="absolute left-1/2 -translate-x-1/2 top-full mt-2 hidden group-hover:block bg-white shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-2xl min-w-[200px] border border-gray-100 z-50 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {menuItem.submenu.map((subItem, subIndex) => (
+                          <li key={subIndex}>
+                            {subItem.newTab ? (
+                              <a
+                                href={subItem.path ?? "#"}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-colors"
+                              >
+                                {subItem.title}
+                              </a>
+                            ) : (
+                              <Link
+                                href={subItem.path ?? "#"}
+                                className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-colors"
+                              >
+                                {subItem.title}
+                              </Link>
+                            )}
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : menuItem.newTab ? (
                     <a
                       href={menuItem.path ?? "#"}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => setNavbarOpen(false)}
-                      className="block py-2 px-3 text-[1.08rem] font-medium transition lg:text-center text-gray-700 hover:text-[#f74a5e]"
+                      className="block py-2 px-3 lg:px-4 text-[0.95rem] font-semibold text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-full transition-all"
                     >
                       {menuItem.title}
                     </a>
                   ) : (
                     <Link
                       href={menuItem.path ?? "#"}
-                      onClick={() => setNavbarOpen(false)}
-                      className={`block py-2 px-3 text-[1.08rem] font-medium transition lg:text-center ${pathname === menuItem.path
-                          ? "text-[#f74a7e]"
-                          : "text-gray-700 hover:text-[#f74a5e]"
-                        }`}
+                      className={`block py-2 px-3 lg:px-4 text-[0.95rem] font-semibold rounded-full transition-all ${
+                        pathname === menuItem.path
+                          ? "text-purple-600 bg-purple-50"
+                          : "text-gray-700 hover:text-purple-600 hover:bg-purple-50"
+                      }`}
                     >
                       {menuItem.title}
                     </Link>
@@ -204,28 +214,90 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Right Logos on large screens */}
-          <div className="hidden lg:flex items-center gap-1 xl:gap-3 min-w-0 flex-shrink justify-end">
-            <>
-              <Image
-                src="/images/iem-logo.png"
-                alt="IEM Logo"
-                width={1500}
-                height={1003}
-                quality={100}
-                priority
-                className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
-              />
-              <Image
-                src="/images/uem-logo.png"
-                alt="UEM Logo"
-                width={1500}
-                height={1003}
-                quality={100}
-                priority
-                className="h-[8vh] lg:h-[9vh] xl:h-[10vh] w-auto object-contain max-w-[7rem] lg:max-w-[8rem]"
-              />
-            </>
+          {/* Right Sponsor Logos */}
+          <div className="hidden lg:flex items-center gap-2 border-l border-gray-200 pl-4">
+            <div className="relative w-10 h-10 bg-white rounded-full shadow-sm border border-gray-100 flex items-center justify-center p-1 overflow-hidden">
+              <Image src="/images/iem-logo.png" alt="IEM Logo" fill className="object-contain p-1" />
+            </div>
+            <div className="relative w-10 h-10 bg-white rounded-full shadow-sm border border-gray-100 flex items-center justify-center p-1 overflow-hidden">
+              <Image src="/images/uem-logo.png" alt="UEM Logo" fill className="object-contain p-1" />
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Navigation Dropdown */}
+        <div className={`absolute top-full left-4 right-4 mt-4 bg-white/95 backdrop-blur-xl shadow-2xl border border-gray-100 rounded-3xl overflow-hidden transition-all duration-300 transform origin-top lg:hidden ${
+          navbarOpen ? "scale-y-100 opacity-100 visible" : "scale-y-0 opacity-0 invisible"
+        }`}>
+          <div className="p-4 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
+            {menuData.map((menuItem, index) => (
+              <div key={index}>
+                {menuItem.submenu ? (
+                  <div className="flex flex-col">
+                    <span className="py-3 px-4 text-[1.05rem] font-semibold text-gray-900 border-b border-gray-50">
+                      {menuItem.title}
+                    </span>
+                    <div className="flex flex-col pl-4 mt-1 space-y-1">
+                      {menuItem.submenu.map((subItem, subIndex) => (
+                        subItem.newTab ? (
+                          <a
+                            key={subIndex}
+                            href={subItem.path ?? "#"}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setNavbarOpen(false)}
+                            className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl"
+                          >
+                            {subItem.title}
+                          </a>
+                        ) : (
+                          <Link
+                            key={subIndex}
+                            href={subItem.path ?? "#"}
+                            onClick={() => setNavbarOpen(false)}
+                            className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl"
+                          >
+                            {subItem.title}
+                          </Link>
+                        )
+                      ))}
+                    </div>
+                  </div>
+                ) : menuItem.newTab ? (
+                  <a
+                    href={menuItem.path ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setNavbarOpen(false)}
+                    className="block py-3 px-4 text-[1.05rem] font-semibold text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-xl"
+                  >
+                    {menuItem.title}
+                  </a>
+                ) : (
+                  <Link
+                    href={menuItem.path ?? "#"}
+                    onClick={() => setNavbarOpen(false)}
+                    className={`block py-3 px-4 text-[1.05rem] font-semibold rounded-xl ${
+                      pathname === menuItem.path
+                        ? "text-purple-600 bg-purple-50"
+                        : "text-gray-700 hover:text-purple-600 hover:bg-purple-50"
+                    }`}
+                  >
+                    {menuItem.title}
+                  </Link>
+                )}
+              </div>
+            ))}
+            
+            {/* Mobile Bottom Logos */}
+            <div className="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-gray-100">
+              <div className="relative w-12 h-12 bg-white rounded-full shadow-sm border border-gray-100 flex items-center justify-center overflow-hidden">
+                <Image src="/images/iem-logo.png" alt="IEM" fill className="object-contain p-1.5" />
+              </div>
+              <div className="relative w-12 h-12 bg-white rounded-full shadow-sm border border-gray-100 flex items-center justify-center overflow-hidden">
+                <Image src="/images/uem-logo.png" alt="UEM" fill className="object-contain p-1.5" />
+              </div>
+            </div>
           </div>
         </div>
       </header>

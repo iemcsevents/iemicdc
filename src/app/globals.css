@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #f14f4f;
+  --primary: #9333ea;
 }
 
 body {
@@ -186,9 +186,9 @@ nav[class*="fixed"] {
 }
 
 .btn:hover {
-  background-color: #e63946;
+  background-color: #7e22ce;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(241, 79, 79, 0.3);
+  box-shadow: 0 2px 8px rgba(147, 51, 234, 0.3);
 }
 
 .btn:active {
@@ -259,5 +259,5 @@ nav[class*="fixed"] {
 
 .focus-ring:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(241, 79, 79, 0.2);
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.2);
 }

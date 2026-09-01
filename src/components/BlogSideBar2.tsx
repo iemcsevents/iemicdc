@@ -13,9 +13,9 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-2xl lg:text-4xl font-extrabold text-gray-900 leading-snug mb-6">
             <span className="block">Institute of Engineering & Management</span>
-            <span className="block text-[#4A6CF7] mt-2">Kolkata, India</span>
+            <span className="block text-purple-600 mt-2">Kolkata, India</span>
           </h1>
-          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-[#4A6CF7] rounded-full shadow-md" />
+          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-purple-500 to-purple-600 rounded-full shadow-md" />
         </div>
 
 
@@ -68,10 +68,10 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
               <ul>
                 <li
                   onClick={() => onSelect("blog1")}
-                  className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-red-50"
+                  className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-purple-50"
                 >
                   <RelatedPost
-                    title="IEM ICDC 2026"
+                    title="IEM ICDC 2027"
                     image="/images/logo-big.png"
                     slug="#"
                   />
@@ -80,15 +80,15 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             {/* Institution Quick Info */}
-            <div className="bg-gradient-to-br from-[#EEF2FF] to-[#F5F3FF] border border-gray-200 rounded-xl shadow p-6">
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-gray-200 rounded-xl shadow p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Quick Info</h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-center gap-3">
-                  <FaUniversity className="text-[#4A6CF7]" />
+                  <FaUniversity className="text-purple-600" />
                   <span>Established in 1989</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <FaGlobe className="text-[#4A6CF7]" />
+                  <FaGlobe className="text-purple-600" />
                   <span>Kolkata, India</span>
                 </li>
               </ul>
@@ -97,7 +97,7 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             {/* References */}
             <div className="bg-white border border-gray-200 rounded-xl shadow-md p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Reference Links</h3>
-              <ul className="list-disc list-inside text-red-600 text-sm space-y-2">
+              <ul className="list-disc list-inside text-purple-600 text-sm space-y-2">
                 <li><Link href="https://iem.edu.in/" target="_blank">IEM Official Website</Link></li>
                 <li><Link href="http://ieee-iemcon.org/" target="_blank">IEEE IEMCON</Link></li>
                 <li><Link href="http://ieee-uemcon.org/" target="_blank">IEEE UEMCON</Link></li>

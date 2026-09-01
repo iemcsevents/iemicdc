@@ -2,13 +2,13 @@ import { Container } from "@/components/Container";
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import BlogChanging from "@/components/BlogChanging";
+import { FaCalendarAlt, FaMapMarkerAlt, FaRobot, FaBrain, FaCloud, FaLock } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "About the Conference",
-  description: "Learn about IEM ICDC 2026 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and the exciting research areas we cover in AI, data science, and cloud computing.",
+  title: "About the Conference | IEM ICDC 2027",
+  description: "Learn about IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and the exciting research areas we cover in AI, data science, and cloud computing.",
   keywords: [
-    "About IEM ICDC 2026",
+    "About IEM ICDC 2027",
     "Conference Information",
     "Research Areas",
     "Computational Intelligence",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     "Academic Research"
   ],
   openGraph: {
-    title: "About IEM ICDC 2026 - Conference Details",
-    description: "Learn about IEM ICDC 2026 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and research areas.",
+    title: "About IEM ICDC 2027 - Conference Details",
+    description: "Learn about IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and research areas.",
     images: ["/images/A1.jpeg"],
   },
 };
@@ -28,172 +28,145 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-red-600 via-red-700 to-black text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">About IEM ICDC 2026</h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Learn more about the International Conference on Computational Intelligence, Data Science and Cloud Computing
+      <div className="relative bg-gradient-to-br from-purple-900 via-purple-800 to-black text-white pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/iem.jpeg')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+        <div className="relative max-w-7xl mx-auto px-4 text-center z-10">
+          <div className="inline-block mb-6 px-6 py-2 bg-purple-500/20 border border-purple-400/30 rounded-full backdrop-blur-md">
+            <span className="text-purple-200 font-semibold tracking-wider uppercase text-sm">March 17-19, 2027 • Kolkata</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            About IEM ICDC <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">2027</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-purple-200 max-w-3xl mx-auto leading-relaxed font-light">
+            5th International Conference on Computational Intelligence, Data Science and Cloud Computing
           </p>
         </div>
       </div>
 
-      <Container className="flex flex-col items-center justify-start gap-16 md:pb-20 pb-10 mt-12">
+      <Container className="flex flex-col items-center justify-start gap-24 py-20">
         
+        {/* Conference Overview Section */}
+        <div className="w-full max-w-7xl">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="lg:w-1/2 space-y-8">
+              <div className="inline-flex items-center gap-3">
+                <div className="w-12 h-1 bg-purple-600 rounded-full"></div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">The Conference</h2>
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                <span className="font-semibold text-purple-700">IEM ICDC 2027</span> is a premier endeavour to entice interest for Computational Intelligence and Data Science applications across diverse domains. As the world rapidly embraces Industry 4.0, these technologies are becoming increasingly pivotal to our society.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                The three-day event will present substantial new findings, fostering global collaboration through insightful invited talks, innovative technical sessions, and informative workshops.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-6 pt-4">
+                <div className="bg-purple-50 rounded-2xl p-6 border border-purple-100 hover:shadow-lg transition-shadow">
+                  <div className="text-purple-600 mb-3"><FaCalendarAlt size={28} /></div>
+                  <h4 className="font-bold text-gray-900">Dates</h4>
+                  <p className="text-gray-600 mt-1">March 17-19, 2027</p>
+                </div>
+                <div className="bg-purple-50 rounded-2xl p-6 border border-purple-100 hover:shadow-lg transition-shadow">
+                  <div className="text-purple-600 mb-3"><FaMapMarkerAlt size={28} /></div>
+                  <h4 className="font-bold text-gray-900">Location</h4>
+                  <p className="text-gray-600 mt-1">Kolkata</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="lg:w-1/2 w-full">
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-purple-100 bg-white">
+                <Image
+                  src="/images/logo.png"
+                  alt="IEM ICDC 2027 Logo"
+                  fill
+                  className="object-contain p-12"
+                />
+                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-3xl pointer-events-none"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Major Tracks Section */}
+        <div className="w-full max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Major Tracks & Topics</h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-purple-500 to-purple-600 mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: FaRobot, title: "AI & Robotics", desc: "Exploring the frontiers of artificial intelligence, machine learning, and autonomous robotic systems." },
+              { icon: FaBrain, title: "Image Processing & NLP", desc: "Advancements in computer vision, pattern recognition, and natural language understanding." },
+              { icon: FaCloud, title: "Cloud & Big Data", desc: "Scalable cloud architectures, distributed computing, and large-scale data analytics." },
+              { icon: FaLock, title: "Security, Blockchain & IoT", desc: "Securing the future with cryptographic ledgers, connected devices, and robust cyber defense." }
+            ].map((track, i) => (
+              <div key={i} className="group bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_20px_40px_rgb(147,51,234,0.1)] hover:border-purple-200 text-center flex flex-col items-center">
+                <div className="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
+                  <track.icon size={32} />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{track.title}</h3>
+                <p className="text-gray-600 leading-relaxed text-sm">{track.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Host Institute Section */}
-        {/* <div className="w-full max-w-7xl">
-          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
-            <div className="flex md:flex-row flex-col">
-              <div className="flex-1 p-8 md:p-12">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-8 bg-gradient-to-b from-red-500 to-red-600 rounded-full"></div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800">About The Host Institute</h2>
-                  </div>
-                  
-                  <div className="text-gray-700 space-y-4 text-base md:text-lg leading-relaxed">
-                    <p>
-                      The IEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the technical and managerial resource shortage in the new era of dynamic globalisation.
-                    </p>
-                    <p>
-                      The IEM group has risen to fame for its strong foundation in teaching and R&D in multifaceted areas. It aims to serve the future generation as well as the Nation through its commitment towards self-sufficiency and unmatchable excellence.
-                    </p>
-                    <p>
-                      IEM is one of the top-ranked engineering colleges in Kolkata and Eastern India which provides the best engineering course with 100% job assistance.
-                    </p>
-                    
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 pt-6 border-t border-gray-200">
-                      <div className="text-center">
-                        <div className="text-2xl md:text-3xl font-bold text-red-600">15+</div>
-                        <div className="text-sm text-gray-600">Years of Excellence</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl md:text-3xl font-bold text-red-600">100%</div>
-                        <div className="text-sm text-gray-600">Job Assistance</div>
-                      </div>
-                      <div className="text-center col-span-2 md:col-span-1">
-                        <div className="text-2xl md:text-3xl font-bold text-red-600">Top</div>
-                        <div className="text-sm text-gray-600">Ranked in Eastern India</div>
-                      </div>
-                    </div>
-                    
-                    <Link 
-                      href="https://iem.edu.in/" 
-                      target="_blank"
-                      className="inline-flex items-center space-x-2 text-red-600 hover:text-red-700 font-semibold transition-colors duration-200 mt-4"
-                    >
-                      <span>Visit IEM Website</span>
-                      <span>→</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="md:w-80 bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center p-8">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-red-200/30 to-red-300/30 rounded-2xl blur-xl"></div>
-                  <Image 
-                    src="/images/iem-logo.png" 
-                    width={250} 
-                    height={250} 
-                    alt="IEM Logo" 
-                    className="relative z-10 object-contain drop-shadow-lg"
+        <div className="w-full max-w-7xl bg-gradient-to-br from-gray-900 to-black rounded-[3rem] p-8 md:p-16 lg:p-20 shadow-2xl relative overflow-hidden">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-900/40 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3 pointer-events-none"></div>
+          
+          <div className="relative z-10 flex flex-col lg:flex-row gap-16 items-center">
+            <div className="lg:w-5/12 w-full">
+              <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-3xl text-center relative shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent rounded-3xl pointer-events-none"></div>
+                <div className="relative w-48 h-48 mx-auto mb-8 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+                  <Image
+                    src="/images/iem-logo.png"
+                    alt="IEM Logo"
+                    fill
+                    className="object-contain p-6"
                   />
                 </div>
+                <h3 className="text-2xl font-bold text-white mb-2">Institute of Engineering & Management</h3>
+                <p className="text-purple-300 font-medium mb-8">Kolkata, India • Est. 1989</p>
+                
+                <div className="flex flex-col gap-3 relative z-20">
+                  <Link href="https://iem.edu.in/" target="_blank" className="w-full py-4 bg-white text-gray-900 font-semibold rounded-xl hover:bg-purple-50 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
+                    Visit IEM Official Website
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </div> */}
-        <BlogChanging/>
-
-        {/* Conference Section */}
-        {/* <div className="w-full max-w-7xl">
-          <div className="bg-gradient-to-br from-gray-900 to-black rounded-3xl shadow-xl border border-gray-800 overflow-hidden text-white">
-            <div className="flex md:flex-row-reverse flex-col">
-              <div className="flex-1 p-8 md:p-12">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-8 bg-gradient-to-b from-red-500 to-red-600 rounded-full"></div>
-                    <h2 className="text-2xl md:text-3xl font-bold">About The Conference</h2>
-                  </div>
-                  
-                  <div className="text-gray-300 space-y-4 text-base md:text-lg leading-relaxed">
-                    <p>
-                      <span className="text-white font-semibold">IEM ICDC 2026: 4th International Conference on Computational Intelligence, Data Science and Cloud Computing</span> is an endeavour in enticing interest for Computational Intelligence and Data Science applications in diverse domains.
-                    </p>
-                    <p>
-                      As the world is moving towards industry 4.0, Computational Intelligence, Data Science and Cloud Computing are becoming more and more relevant in our society in all possible ways.
-                    </p>
-                    <p>
-                      The most substantial new findings about AI and Robotics, Image processing and NLP, Cloud Computing and big data analytics as well as in Cyber security, Blockchain and IoT and various allied fields will be presented in the three-day event.
-                    </p>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 pt-6 border-t border-gray-700">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                        <span className="text-sm">Insightful Invited Talks</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                        <span className="text-sm">Innovative Technical Sessions</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                        <span className="text-sm">Hybrid Event Format</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                        <span className="text-sm">Global Participation</span>
-                      </div>
-                    </div>
-                    
-                    <div className="mt-6">
-                      <p className="text-gray-400 italic">
-                        The general chair, the convener, along with the entire team invite researchers and industry personnel around the world to take part in the upcoming event to make the event a grand success.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            
+            <div className="lg:w-7/12 space-y-8 text-white">
+              <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">About The Host Institute</h2>
+              <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+                <p>
+                  The IEM group is an acclaimed educational group amongst the industry-centred academic training organisations of today. IEM has set sublime standards in addressing the technical and managerial resource shortage in the new era of dynamic globalisation.
+                </p>
+                <p>
+                  Ranked among the top engineering colleges in Eastern India, IEM is renowned for its 100% job assistance and industry-aligned curriculum. Since its inception, the group has surpassed numerous benchmarks in research, industry collaboration, and student success.
+                </p>
               </div>
               
-              <div className="md:w-80 bg-gradient-to-br from-red-900/30 to-red-800/30 flex items-center justify-center p-8">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-2xl blur-xl"></div>
-                  <Image 
-                    src="/images/logo.png" 
-                    width={250} 
-                    height={250} 
-                    alt="Conference Logo" 
-                    className="relative z-10 object-contain drop-shadow-lg"
-                  />
+              <div className="pt-8 border-t border-white/10">
+                <h4 className="text-xl font-semibold text-white mb-6">Major International Conferences Organized</h4>
+                <div className="flex flex-wrap gap-3">
+                  {["IEEE IEMCON (Vancouver)", "IEEE UEMCON (New York)", "IEEE CCWC (Las Vegas)", "IEEE IEMANTENNA", "IEEE IEMTRONICS"].map((conf, idx) => (
+                    <span key={idx} className="px-4 py-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-200 text-sm font-medium hover:bg-purple-500/20 transition-colors cursor-default">
+                      {conf}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
-
-        {/* Call to Action Section */}
-        {/* <div className="w-full max-w-4xl">
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Join Us?</h3>
-            <p className="text-red-100 mb-8 text-lg">
-              Be part of the premier conference in computational intelligence and data science
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/papers" 
-                className="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Submit Your Paper
-              </Link>
-              <Link 
-                href="/registrations" 
-                className="bg-red-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Register Now
-              </Link>
-            </div>
-          </div>
-        </div> */}
+        </div>
 
       </Container>
     </>

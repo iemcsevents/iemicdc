@@ -74,12 +74,6 @@ function Carousel({ ...props }) {
             className="absolute transition-opacity duration-500 opacity-100 left-0 top-0 w-full md:h-full h-[90%] md:object-fit object-cover"
           />
           <Image
-            src="/images/dp7.jpg"
-            fill={true}
-            alt=""
-            className="absolute transition-opacity duration-500 opacity-100 left-0 top-0 w-full md:h-full h-[90%] md:object-fit object-cover"
-          />
-          <Image
             src="/images/dp8.jpg"
             fill={true}
             alt=""
@@ -116,7 +110,7 @@ function Carousel({ ...props }) {
               </h1>
               <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
             </div>
-            
+
             <div className="text-center space-y-3 fade-in-delay-1">
               <p className="md:text-2xl text-lg font-semibold text-gray-100 max-w-4xl leading-relaxed">
                 4th International Conference on
@@ -129,7 +123,7 @@ function Carousel({ ...props }) {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/20 fade-in-delay-2">
               <h3 className="text-xl md:text-2xl font-semibold text-yellow-300">March 16-18, 2026</h3>
             </div>
-            
+
             <div className="text-center space-y-2 fade-in-delay-3">
               <p className="md:text-lg text-sm font-medium text-gray-300">Organized by</p>
               <p className="md:text-base text-sm text-gray-200 max-w-3xl leading-relaxed">

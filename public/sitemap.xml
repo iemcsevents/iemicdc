@@ -7,57 +7,57 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     
     <url>
-        <loc>https://iemicdc.org/</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/about</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/about</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/committee</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/committee</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/awardees</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/awardees</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/papers</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/papers</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/speakers</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/speakers</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/registrations</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/registrations</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     
     <url>
-        <loc>https://iemicdc.org/venue</loc>
-        <lastmod>2024-12-19</lastmod>
+        <loc>https://www.iemicdc.org/venue</loc>
+        <lastmod>2026-09-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>

@@ -10,14 +10,14 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-2xl lg:text-4xl md:text-3xl font-extrabold text-gray-900 leading-tight tracking-tight">
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4A6CF7] via-indigo-500 to-purple-600">
-              4th International Conference
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-500">
+              5th International Conference
             </span>
             <span className="block mt-2">
               on Computational Intelligence, Data Science and Cloud Computing
             </span>
           </h1>
-          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-[#4A6CF7] via-indigo-400 to-purple-600 rounded-full mt-4 shadow-md" />
+          <div className="w-24 h-1 mx-auto bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mt-4 shadow-md" />
         </div>
 
 
@@ -37,7 +37,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              IEM ICDC 2026: 4th International Conference on Computational Intelligence, Data Science and Cloud Computing is an endeavour in enticing interest for Computational Intelligence and Data Science applications in diverse domains.
+              IEM ICDC 2027: 5th International Conference on Computational Intelligence, Data Science and Cloud Computing is an endeavour in enticing interest for Computational Intelligence and Data Science applications in diverse domains.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -80,7 +80,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
               <ul>
                 <li
                   onClick={() => onSelect("blog2")}
-                  className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-blue-50"
+                  className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-purple-50"
                 >
                   <RelatedPost
                     title="Host Institute: IEM Kolkata"
@@ -102,16 +102,16 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             {/* Conference Quick Info */}
-            <div className="bg-gradient-to-br from-[#EEF2FF] to-[#F5F3FF] border border-gray-200 rounded-xl shadow p-6">
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-gray-200 rounded-xl shadow p-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Quick Info</h3>
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-center gap-3">
-                  <FaCalendarAlt className="text-[#4A6CF7]" />
-                  <span>March 16-18, 2026</span>
+                  <FaCalendarAlt className="text-purple-600" />
+                  <span>March 17-19, 2027</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <FaMapMarkerAlt className="text-[#4A6CF7]" />
-                  <span>Software Technology Parks of India, Kolkata</span>
+                  <FaMapMarkerAlt className="text-purple-600" />
+                  <span>Kolkata</span>
                 </li>
                 {/* <li className="flex items-center gap-3">
                   <FaClock className="text-[#4A6CF7]" />
