@@ -38,7 +38,7 @@ export default function ComingSoon({ title }: { title: string }) {
             </h2>
 
             <p className="text-lg md:text-xl text-purple-200 max-w-2xl leading-relaxed font-light">
-              We are working hard to finalize the details for the IEM ICDC 2027 edition. Please check back later!
+              We are working hard to finalize the details for the IEM-ICDC 2027 edition. Please check back later!
             </p>
 
             <div className="pt-8">

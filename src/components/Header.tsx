@@ -69,13 +69,13 @@ const menuData: MenuItem[] = [
     submenu: [
       {
         id: 91,
-        title: "IEM ICDC 2026",
+        title: "IEM-ICDC 2026",
         path: "https://2026.iemicdc.org",
         newTab: true,
       },
       {
         id: 92,
-        title: "IEM ICDC 2025",
+        title: "IEM-ICDC 2025",
         path: "https://2025.iemicdc.org",
         newTab: true,
       },
@@ -102,28 +102,26 @@ const Header = () => {
 
   return (
     <div className="flex justify-center w-full relative z-50">
-      <header className={`fixed transition-all duration-500 w-full max-w-7xl px-4 md:px-6 ${
-        sticky ? "top-4" : "top-6 md:top-8"
-      }`}>
-        <div className={`w-full flex items-center justify-between transition-all duration-500 px-4 py-2 ${
-          sticky 
-            ? "bg-white/80 backdrop-blur-xl shadow-lg shadow-purple-500/10 border border-white/50 rounded-full" 
-            : "bg-white/95 backdrop-blur-md shadow-2xl shadow-purple-900/10 border border-purple-100 rounded-[2.5rem]"
+      <header className={`fixed transition-all duration-500 w-full max-w-7xl px-4 md:px-6 ${sticky ? "top-4" : "top-6 md:top-8"
         }`}>
+        <div className={`w-full flex items-center justify-between transition-all duration-500 px-4 py-2 ${sticky
+            ? "bg-white/80 backdrop-blur-xl shadow-lg shadow-purple-500/10 border border-white/50 rounded-full"
+            : "bg-white/95 backdrop-blur-md shadow-2xl shadow-purple-900/10 border border-purple-100 rounded-[2.5rem]"
+          }`}>
           {/* Left: Logos */}
           <div className="flex items-center gap-3 md:gap-5">
             <Link href="/" className="flex items-center">
               <div className="relative w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-inner border border-gray-100 transition-transform hover:scale-105">
                 <Image
                   src="/images/logo.png"
-                  alt="IEM ICDC 2027 Logo"
+                  alt="IEM-ICDC 2027 Logo"
                   fill
                   priority
                   className="object-contain p-1.5"
                 />
               </div>
             </Link>
-            
+
             <div className="hidden sm:flex items-center gap-3 border-l border-gray-200 pl-3 md:pl-5">
               <Image
                 src="/images/sp.png"
@@ -200,11 +198,10 @@ const Header = () => {
                   ) : (
                     <Link
                       href={menuItem.path ?? "#"}
-                      className={`block py-2 px-3 lg:px-4 text-[0.95rem] font-semibold rounded-full transition-all ${
-                        pathname === menuItem.path
+                      className={`block py-2 px-3 lg:px-4 text-[0.95rem] font-semibold rounded-full transition-all ${pathname === menuItem.path
                           ? "text-purple-600 bg-purple-50"
                           : "text-gray-700 hover:text-purple-600 hover:bg-purple-50"
-                      }`}
+                        }`}
                     >
                       {menuItem.title}
                     </Link>
@@ -226,9 +223,8 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation Dropdown */}
-        <div className={`absolute top-full left-4 right-4 mt-4 bg-white/95 backdrop-blur-xl shadow-2xl border border-gray-100 rounded-3xl overflow-hidden transition-all duration-300 transform origin-top lg:hidden ${
-          navbarOpen ? "scale-y-100 opacity-100 visible" : "scale-y-0 opacity-0 invisible"
-        }`}>
+        <div className={`absolute top-full left-4 right-4 mt-4 bg-white/95 backdrop-blur-xl shadow-2xl border border-gray-100 rounded-3xl overflow-hidden transition-all duration-300 transform origin-top lg:hidden ${navbarOpen ? "scale-y-100 opacity-100 visible" : "scale-y-0 opacity-0 invisible"
+          }`}>
           <div className="p-4 flex flex-col gap-1 max-h-[70vh] overflow-y-auto">
             {menuData.map((menuItem, index) => (
               <div key={index}>
@@ -277,18 +273,17 @@ const Header = () => {
                   <Link
                     href={menuItem.path ?? "#"}
                     onClick={() => setNavbarOpen(false)}
-                    className={`block py-3 px-4 text-[1.05rem] font-semibold rounded-xl ${
-                      pathname === menuItem.path
+                    className={`block py-3 px-4 text-[1.05rem] font-semibold rounded-xl ${pathname === menuItem.path
                         ? "text-purple-600 bg-purple-50"
                         : "text-gray-700 hover:text-purple-600 hover:bg-purple-50"
-                    }`}
+                      }`}
                   >
                     {menuItem.title}
                   </Link>
                 )}
               </div>
             ))}
-            
+
             {/* Mobile Bottom Logos */}
             <div className="flex items-center justify-center gap-4 mt-6 pt-6 border-t border-gray-100">
               <div className="relative w-12 h-12 bg-white rounded-full shadow-sm border border-gray-100 flex items-center justify-center overflow-hidden">

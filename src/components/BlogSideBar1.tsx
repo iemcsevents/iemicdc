@@ -37,7 +37,7 @@ const BlogSidebar1 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              IEM ICDC 2027: 5th International Conference on Computational Intelligence, Data Science and Cloud Computing is an endeavour in enticing interest for Computational Intelligence and Data Science applications in diverse domains.
+              IEM-ICDC 2027: 5th International Conference on Computational Intelligence, Data Science and Cloud Computing is an endeavour in enticing interest for Computational Intelligence and Data Science applications in diverse domains.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">

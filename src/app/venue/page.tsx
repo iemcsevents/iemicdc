@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Venue | IEM ICDC 2027",
-  description: "IEM ICDC 2027 Venue details - Kolkata, India.",
+  title: "Venue | IEM-ICDC 2027",
+  description: "IEM-ICDC 2027 Venue details - Kolkata, India.",
 };
 
 export default function Page() {
@@ -44,7 +44,7 @@ export default function Page() {
             </h2>
 
             <p className="text-lg md:text-xl text-purple-200 max-w-2xl leading-relaxed font-light">
-              We are excited to announce that the IEM ICDC 2027 conference will be held in the vibrant city of Kolkata, India.
+              We are excited to announce that the IEM-ICDC 2027 conference will be held in the vibrant city of Kolkata, India.
             </p>
             <p className="text-lg md:text-xl text-purple-300 max-w-2xl leading-relaxed font-semibold">
               The exact venue location is To Be Announced (TBA).

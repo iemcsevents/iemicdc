@@ -71,7 +71,7 @@ const BlogSidebar2 = ({ onSelect }: { onSelect: (blog: "blog1" | "blog2" | "blog
                   className="border-b border-gray-100 cursor-pointer transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg rounded-lg hover:bg-purple-50"
                 >
                   <RelatedPost
-                    title="IEM ICDC 2027"
+                    title="IEM-ICDC 2027"
                     image="/images/logo-big.png"
                     slug="#"
                   />

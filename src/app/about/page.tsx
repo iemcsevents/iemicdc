@@ -5,10 +5,10 @@ import type { Metadata } from "next";
 import { FaCalendarAlt, FaMapMarkerAlt, FaRobot, FaBrain, FaCloud, FaLock } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "About the Conference | IEM ICDC 2027",
-  description: "Learn about IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and the exciting research areas we cover in AI, data science, and cloud computing.",
+  title: "About the Conference | IEM-ICDC 2027",
+  description: "Learn about IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and the exciting research areas we cover in AI, data science, and cloud computing.",
   keywords: [
-    "About IEM ICDC 2027",
+    "About IEM-ICDC 2027",
     "Conference Information",
     "Research Areas",
     "Computational Intelligence",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     "Academic Research"
   ],
   openGraph: {
-    title: "About IEM ICDC 2027 - Conference Details",
-    description: "Learn about IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and research areas.",
+    title: "About IEM-ICDC 2027 - Conference Details",
+    description: "Learn about IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing. Discover our mission, vision, and research areas.",
     images: ["/images/A1.jpeg"],
   },
 };
@@ -36,7 +36,7 @@ export default function About() {
             <span className="text-purple-200 font-semibold tracking-wider uppercase text-sm">March 17-19, 2027 • Kolkata</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-            About IEM ICDC <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">2027</span>
+            About IEM-ICDC <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">2027</span>
           </h1>
           <p className="text-xl md:text-2xl text-purple-200 max-w-3xl mx-auto leading-relaxed font-light">
             5th International Conference on Computational Intelligence, Data Science and Cloud Computing
@@ -55,7 +55,7 @@ export default function About() {
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">The Conference</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                <span className="font-semibold text-purple-700">IEM ICDC 2027</span> is a premier endeavour to entice interest for Computational Intelligence and Data Science applications across diverse domains. As the world rapidly embraces Industry 4.0, these technologies are becoming increasingly pivotal to our society.
+                <span className="font-semibold text-purple-700">IEM-ICDC 2027</span> is a premier endeavour to entice interest for Computational Intelligence and Data Science applications across diverse domains. As the world rapidly embraces Industry 4.0, these technologies are becoming increasingly pivotal to our society.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 The three-day event will present substantial new findings, fostering global collaboration through insightful invited talks, innovative technical sessions, and informative workshops.
@@ -79,7 +79,7 @@ export default function About() {
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-purple-100 bg-white">
                 <Image
                   src="/images/logo.png"
-                  alt="IEM ICDC 2027 Logo"
+                  alt="IEM-ICDC 2027 Logo"
                   fill
                   className="object-contain p-12"
                 />

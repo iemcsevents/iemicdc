@@ -4,7 +4,7 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "IEM ICDC 2026: International Conference on Computational Intelligence, Data Science and Cloud Computing",
+    "name": "IEM-ICDC 2026: International Conference on Computational Intelligence, Data Science and Cloud Computing",
     "description": "International Conference on Computational Intelligence, Data Science and Cloud Computing organized by Institute of Engineering & Management, Kolkata",
     "startDate": "2026-03-16T09:00:00+05:30",
     "endDate": "2026-03-18T17:00:00+05:30",
@@ -126,7 +126,7 @@ export default function StructuredData() {
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "IEM ICDC 2026",
+    "name": "IEM-ICDC 2026",
     "alternateName": "International Conference on Computational Intelligence, Data Science and Cloud Computing",
     "url": "https://www.iemicdc.org",
     "potentialAction": {

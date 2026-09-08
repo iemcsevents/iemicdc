@@ -129,7 +129,7 @@ export default async function Awardees() {
                                 href="/about" 
                                 className="bg-red-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl"
                             >
-                                Learn More About IEM ICDC
+                                Learn More About IEM-ICDC
                             </a>
                         </div>
                     </div>

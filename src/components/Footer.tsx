@@ -15,11 +15,11 @@ export const Footer = () => {
                 src="/images/logo.png"
                 width={60}
                 height={60}
-                alt="IEM ICDC 2026 Logo"
+                alt="IEM-ICDC 2026 Logo"
                 className="object-contain"
               />
               <div>
-                <h3 className="font-bold text-xl">IEM ICDC 2027</h3>
+                <h3 className="font-bold text-xl">IEM-ICDC 2027</h3>
                 <p className="text-gray-300 text-sm">International Conference</p>
               </div>
             </div>
@@ -42,7 +42,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-lg">Conference</h4>
             <div className="space-y-2">
-              <Link href="/about" className="block text-gray-300 hover:text-white transition-colors">About IEM ICDC</Link>
+              <Link href="/about" className="block text-gray-300 hover:text-white transition-colors">About IEM-ICDC</Link>
               <Link href="/papers" className="block text-gray-300 hover:text-white transition-colors">Research Tracks</Link>
               <Link href="/speakers" className="block text-gray-300 hover:text-white transition-colors">Keynote Speakers</Link>
               <Link href="/committee" className="block text-gray-300 hover:text-white transition-colors">Committees</Link>
@@ -134,7 +134,7 @@ export const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2027 IEM ICDC. All rights reserved.
+              © 2027 IEM-ICDC. All rights reserved.
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-400">
               <span>Designed and Developed by</span>

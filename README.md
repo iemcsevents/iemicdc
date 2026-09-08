@@ -1,4 +1,4 @@
-# IEM ICDC 2027 - International Conference Website
+# IEM-ICDC 2027 - International Conference Website
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.3-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.1.1-blue?style=flat-square&logo=react)](https://reactjs.org/)
@@ -7,7 +7,7 @@
 
 ## 🎯 About
 
-**IEM ICDC 2027: International Conference on Computational Intelligence, Data Science and Cloud Computing** is the official website for the fifth edition of this premier academic conference. Organized by the Institute of Engineering & Management, Kolkata, this conference brings together leading researchers, industry experts, and innovators from around the world.
+**IEM-ICDC 2027: International Conference on Computational Intelligence, Data Science and Cloud Computing** is the official website for the fifth edition of this premier academic conference. Organized by the Institute of Engineering & Management, Kolkata, this conference brings together leading researchers, industry experts, and innovators from around the world.
 
 ### 📅 Conference Details
 - **Dates**: March 17-19, 2027
@@ -198,7 +198,7 @@ pnpm start
 
 ## 📄 License
 
-This project is developed for IEM ICDC 2027. All rights reserved.
+This project is developed for IEM-ICDC 2027. All rights reserved.
 
 ---
 

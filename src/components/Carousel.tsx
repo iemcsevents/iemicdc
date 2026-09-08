@@ -106,7 +106,7 @@ function Carousel({ ...props }) {
           <div className="w-full h-full bg-gradient-to-br from-black/70 via-black/60 to-black/70 absolute z-40 flex flex-col items-center justify-center gap-4 md:gap-8 text-white px-6">
             <div className="text-center space-y-4 fade-in">
               <h1 className="md:text-7xl text-4xl font-bold bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent drop-shadow-2xl">
-                IEM ICDC 2026
+                IEM-ICDC 2026
               </h1>
               <div className="h-1 w-24 bg-gradient-to-r from-red-500 to-red-600 mx-auto rounded-full"></div>
             </div>

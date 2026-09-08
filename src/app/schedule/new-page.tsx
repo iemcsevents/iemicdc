@@ -4,17 +4,17 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Conference Schedule - Coming Soon",
-  description: "The detailed conference schedule for IEM ICDC 2026 will be announced soon. Stay tuned for the complete program including keynote sessions, paper presentations, and workshops.",
+  description: "The detailed conference schedule for IEM-ICDC 2026 will be announced soon. Stay tuned for the complete program including keynote sessions, paper presentations, and workshops.",
   keywords: [
     "Conference Schedule",
     "Program Schedule", 
-    "IEM ICDC 2026 Schedule",
+    "IEM-ICDC 2026 Schedule",
     "Conference Timeline",
     "Coming Soon"
   ],
   openGraph: {
-    title: "Conference Schedule - Coming Soon - IEM ICDC 2026",
-    description: "The detailed conference schedule for IEM ICDC 2026 will be announced soon.",
+    title: "Conference Schedule - Coming Soon - IEM-ICDC 2026",
+    description: "The detailed conference schedule for IEM-ICDC 2026 will be announced soon.",
   },
 };
 

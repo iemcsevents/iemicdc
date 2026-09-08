@@ -20,12 +20,12 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.iemicdc.org'),
   title: {
-    default: "IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing",
-    template: "%s | IEM ICDC 2027"
+    default: "IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing",
+    template: "%s | IEM-ICDC 2027"
   },
-  description: "Join IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing, March 17-19, 2027 in Kolkata. Bringing together researchers, industry experts, and innovators from around the world.",
+  description: "Join IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing, March 17-19, 2027 in Kolkata. Bringing together researchers, industry experts, and innovators from around the world.",
   keywords: [
-    "IEM ICDC 2027",
+    "IEM-ICDC 2027",
     "International Conference",
     "Computational Intelligence",
     "Data Science",
@@ -68,22 +68,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://www.iemicdc.org",
-    siteName: "IEM ICDC 2027",
-    title: "IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing",
-    description: "Join IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing, March 17-19, 2027 in Kolkata. Bringing together researchers, industry experts, and innovators from around the world.",
+    siteName: "IEM-ICDC 2027",
+    title: "IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing",
+    description: "Join IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing, March 17-19, 2027 in Kolkata. Bringing together researchers, industry experts, and innovators from around the world.",
     images: [
       {
         url: "/images/iem.jpeg",
         width: 1200,
         height: 630,
-        alt: "IEM ICDC 2027 Conference",
+        alt: "IEM-ICDC 2027 Conference",
         type: "image/jpeg",
       },
       {
         url: "/images/logo3.png",
         width: 800,
         height: 600,
-        alt: "IEM ICDC 2027 Logo",
+        alt: "IEM-ICDC 2027 Logo",
         type: "image/png",
       }
     ],
@@ -92,8 +92,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@iemkolkata",
     creator: "@iemkolkata",
-    title: "IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing",
-    description: "Join IEM ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing, March 17-19, 2027 in Kolkata.",
+    title: "IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing",
+    description: "Join IEM-ICDC 2027 - International Conference on Computational Intelligence, Data Science and Cloud Computing, March 17-19, 2027 in Kolkata.",
     images: ["/images/iem.jpeg"],
   },
   verification: {
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
   category: "education",
   classification: "Academic Conference",
   other: {
-    "conference:name": "IEM ICDC 2027",
+    "conference:name": "IEM-ICDC 2027",
     "conference:location": "Kolkata, West Bengal, India",
     "conference:start_date": "2027-03-17",
     "conference:end_date": "2027-03-19",
