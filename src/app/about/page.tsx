@@ -157,7 +157,7 @@ export default function About() {
               <div className="pt-8 border-t border-white/10">
                 <h4 className="text-xl font-semibold text-white mb-6">Major International Conferences Organized</h4>
                 <div className="flex flex-wrap gap-3">
-                  {["IEEE IEMCON (Vancouver)", "IEEE UEMCON (New York)", "IEEE CCWC (Las Vegas)", "IEEE IEMANTENNA", "IEEE IEMTRONICS"].map((conf, idx) => (
+                  {["IEEE IEMCON (Vancouver)", "IEEE UEMCON (New York)", "IEEE CCWC (Las Vegas)", "IEEE IEMANTENNA", "IEEE IEMTRONICS", "NACDC (Vancouver)"].map((conf, idx) => (
                     <span key={idx} className="px-4 py-2.5 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-200 text-sm font-medium hover:bg-purple-500/20 transition-colors cursor-default">
                       {conf}
                     </span>

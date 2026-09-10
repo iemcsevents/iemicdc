@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "@/components/Container";
 import { BookOpen, Calendar, Edit3, CheckCircle, ExternalLink, FileText, Award } from "lucide-react";
+import ResearchTracks from "./ResearchTracks";
 
 export const metadata = {
   title: "Call for Papers | IEM-ICDC 2027",
@@ -23,8 +24,12 @@ export default function PapersPage() {
             Call for <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-200">Papers</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-purple-200 max-w-3xl mx-auto leading-relaxed font-light mb-12">
+          <p className="text-xl md:text-2xl text-purple-200 max-w-3xl mx-auto leading-relaxed font-light mb-8">
             Join us at IEM-ICDC 2027. We invite high-quality, original submissions bridging the gap between theoretical research and practical solutions.
+          </p>
+
+          <p className="text-lg md:text-xl text-white max-w-2xl mx-auto font-medium mb-12">
+            Conference Proceedings will be published in SCOPUS indexed Springer book series <br/><span className="text-sm font-normal text-purple-200">(Approval Awaited)</span>
           </p>
           
           <a 
@@ -99,6 +104,8 @@ export default function PapersPage() {
 
         </div>
 
+        {/* Research Tracks Section */}
+        <ResearchTracks />
 
       </Container>
     </div>

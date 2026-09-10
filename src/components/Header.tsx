@@ -122,15 +122,7 @@ const Header = () => {
               </div>
             </Link>
 
-            <div className="hidden sm:flex items-center gap-3 border-l border-gray-200 pl-3 md:pl-5">
-              <Image
-                src="/images/sp.png"
-                alt="Springer"
-                width={812}
-                height={318}
-                className="h-7 md:h-9 w-auto object-contain"
-              />
-            </div>
+
           </div>
 
           {/* Mobile Toggle Button */}

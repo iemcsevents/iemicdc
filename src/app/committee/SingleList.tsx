@@ -10,47 +10,73 @@ interface SingleListProps {
   members: string[] | Record<string, string[]>;
 }
 
-// Pick colorful bullet classes in rotation
-const bulletColors = [
-  "from-red-500 to-pink-500",
-];
-
 const getCommitteeIcon = (title: string) => {
   if (title.toLowerCase().includes("chair") || title.toLowerCase().includes("general")) {
-    return <Crown className="w-6 h-6 text-red-600" />;
+    return <Crown className="w-6 h-6 text-purple-600" />;
   }
   if (title.toLowerCase().includes("advisory")) {
-    return <Star className="w-6 h-6 text-blue-600" />;
+    return <Star className="w-6 h-6 text-indigo-600" />;
   }
   if (title.toLowerCase().includes("program")) {
-    return <Award className="w-6 h-6 text-green-600" />;
+    return <Award className="w-6 h-6 text-pink-600" />;
   }
   return <Users className="w-6 h-6 text-purple-600" />;
 };
 
-const renderMemberList = (list: string[]) => (
-  <ul className="space-y-4 mt-4">
-    {list.map((member, idx) => {
-      const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
-      const colorClass = bulletColors[idx % bulletColors.length]; // rotate colors
+const MemberItem = ({ member, idx }: { member: string; idx: number }) => {
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+  
+  // Parse member string: Name and Affiliation
+  const commaIndex = member.indexOf(",");
+  let name = member;
+  let affiliation = "";
 
-      return (
-        <motion.li
-          ref={ref}
-          initial={{ scale: 0.95, opacity: 0 }}
-          animate={inView ? { scale: 1, opacity: 1 } : {}}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          key={idx}
-          className="flex items-center space-x-3 text-base sm:text-lg text-gray-700 pl-4 hover:text-[#4A6CF7] cursor-default"
-        >
-          <div
-            className={`w-3 h-3 bg-gradient-to-r ${colorClass} rounded-full transition-transform duration-200`}
-          ></div>
-          <span className="self-center pl-3">{member}</span>
-        </motion.li>
-      );
-    })}
-  </ul>
+  if (commaIndex !== -1) {
+    name = member.substring(0, commaIndex).trim();
+    affiliation = member.substring(commaIndex + 1).trim();
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -20 }}
+      animate={inView ? { opacity: 1, x: 0 } : {}}
+      transition={{ duration: 0.4, delay: Math.min(idx * 0.05, 0.5), ease: "easeOut" }}
+      className="group relative flex flex-col sm:flex-row sm:items-center justify-between py-3 sm:py-4 pl-8 sm:pl-10 pr-4 sm:pr-8 cursor-default"
+    >
+      {/* Slider Background Wrapper (overflow hidden to contain slider without clipping node) */}
+      <div className="absolute inset-0 overflow-hidden z-0 rounded-r-xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-800 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></div>
+      </div>
+
+      {/* Node Indicator on the timeline */}
+      <div className="absolute top-1/2 -translate-y-1/2 left-[-5px] w-2.5 h-2.5 rounded-full bg-purple-300 border-[2px] border-[#fafafa] group-hover:bg-white group-hover:border-purple-600 group-hover:scale-150 transition-all duration-300 z-20 shadow-sm"></div>
+
+      {/* Content wrapper (z-10 to stay above the slider) */}
+      <div className="relative z-10 flex items-center mb-1 sm:mb-0">
+        <span className="text-[17px] font-semibold text-gray-800 group-hover:text-white transition-colors duration-500">
+          {name}
+        </span>
+      </div>
+
+      {/* Affiliation / Role Badge */}
+      {affiliation && (
+        <div className="relative z-10 sm:ml-4">
+          <span className="inline-block px-3 py-1 bg-white/60 backdrop-blur-sm text-purple-700 text-sm font-mono rounded-md border border-purple-200/50 group-hover:bg-white/20 group-hover:text-white group-hover:border-white/30 transition-all duration-500">
+            {affiliation}
+          </span>
+        </div>
+      )}
+    </motion.div>
+  );
+};
+
+const renderMemberList = (list: string[]) => (
+  <div className="flex flex-col relative w-full">
+    {list.map((member, idx) => (
+      <MemberItem key={idx} member={member} idx={idx} />
+    ))}
+  </div>
 );
 
 export default function SingleList({ title, members }: SingleListProps) {
@@ -58,44 +84,43 @@ export default function SingleList({ title, members }: SingleListProps) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="group relative bg-[#f5feff] w-full lg:w-[70%] border border-gray-200 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-300 p-6 mb-10 mx-auto"
+      className="w-full max-w-5xl mx-auto flex flex-col relative z-10"
     >
-      {/* Title with icon */}
-      <div className="flex items-center space-x-3 mb-6">
-        {icon}
-        <h3 className="text-3xl font-bold text-[#4A6CF7] group-hover:text-pink-600 transition-colors duration-300">
+      {/* Header Node */}
+      <div className="flex items-center space-x-6 mb-6 group relative z-20">
+        <div className="flex items-center justify-center w-14 h-14 rounded-full bg-white border border-purple-200 shadow-sm group-hover:border-purple-400 group-hover:shadow-purple-500/20 group-hover:shadow-lg transition-all duration-300">
+          {icon}
+        </div>
+        <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight transition-colors duration-300">
           {title}
         </h3>
       </div>
 
-      {Array.isArray(members) ? (
-        renderMemberList(members)
-      ) : (
-        Object.entries(members).map(([subTitle, subMembers]) => (
-          <motion.div
-            key={subTitle}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
-            className="bg-[#f9f9ff] rounded-lg p-4 mb-6 shadow-sm"
-          >
-            <h4 className="flex items-center text-xl font-semibold text-gray-800 mb-3 space-x-2">
-              {getCommitteeIcon(subTitle)}
-              <span>{subTitle}</span>
-            </h4>
-            {subMembers.length ? (
-              renderMemberList(subMembers)
-            ) : (
-              <p className="text-sm text-gray-500 pl-4">To be announced</p>
-            )}
-          </motion.div>
-        ))
-      )}
+      {/* Members Container with Left Border (Timeline Line) */}
+      <div className="ml-7 border-l-2 border-purple-200/80 pb-12 flex flex-col relative z-10">
+        {Array.isArray(members) ? (
+          renderMemberList(members)
+        ) : (
+          Object.entries(members).map(([subTitle, subMembers]) => (
+            <div key={subTitle} className="mb-8 last:mb-0">
+              <h4 className="flex items-center text-lg font-bold text-gray-700 mb-4 pl-8 space-x-2 relative">
+                {/* Sub-node indicator */}
+                <div className="absolute top-1/2 -translate-y-1/2 left-[-7px] w-3 h-3 rounded-full bg-indigo-400 border-[2px] border-[#fafafa]"></div>
+                <span>{subTitle}</span>
+              </h4>
+              {subMembers.length ? (
+                renderMemberList(subMembers)
+              ) : (
+                <p className="text-sm text-gray-500 pl-8 py-2 italic">To be announced</p>
+              )}
+            </div>
+          ))
+        )}
+      </div>
     </motion.div>
   );
 }
