@@ -154,29 +154,31 @@ const Header = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                       </button>
-                      <ul className="absolute left-1/2 -translate-x-1/2 top-full mt-2 hidden group-hover:block bg-white shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-2xl min-w-[200px] border border-gray-100 z-50 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                        {menuItem.submenu.map((subItem, subIndex) => (
-                          <li key={subIndex}>
-                            {subItem.newTab ? (
-                              <a
-                                href={subItem.path ?? "#"}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-colors"
-                              >
-                                {subItem.title}
-                              </a>
-                            ) : (
-                              <Link
-                                href={subItem.path ?? "#"}
-                                className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-colors"
-                              >
-                                {subItem.title}
-                              </Link>
-                            )}
-                          </li>
-                        ))}
-                      </ul>
+                      <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300 z-50">
+                        <ul className="bg-white shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-2xl min-w-[200px] border border-gray-100 p-2">
+                          {menuItem.submenu.map((subItem, subIndex) => (
+                            <li key={subIndex}>
+                              {subItem.newTab ? (
+                                <a
+                                  href={subItem.path ?? "#"}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-colors"
+                                >
+                                  {subItem.title}
+                                </a>
+                              ) : (
+                                <Link
+                                  href={subItem.path ?? "#"}
+                                  className="block py-2.5 px-4 text-sm font-medium text-gray-600 hover:text-purple-600 hover:bg-purple-50 rounded-xl transition-colors"
+                                >
+                                  {subItem.title}
+                                </Link>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </>
                   ) : menuItem.newTab ? (
                     <a
