@@ -153,8 +153,8 @@ export default function Page() {
       <div className="w-full max-w-7xl px-4 sm:px-8 flex flex-col pb-12">
         <SingleList title="Patron" members={patronMembers} />
         <SingleList title="General Chairs" members={generalChairMembers} />
-        <SingleList title="Advisory Committee" members={advisoryCommitteeMembers} />
-        <SingleList title="Technical Committee" members={technicalCommitteeMembers} />
+        {/* <SingleList title="Advisory Committee" members={advisoryCommitteeMembers} /> */}
+        {/* <SingleList title="Technical Committee" members={technicalCommitteeMembers} /> */}
         <SingleList title="Organizing Chairs" members={organizingChairsMembers} />
         <SingleList title="Organizing Committee" members={organizingCommitteeMembers} />
       </div>
