@@ -226,6 +226,46 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Technical Partners Section - Premium Marquee */}
+      <div className="w-full max-w-7xl mx-auto px-4 py-16 flex flex-col gap-10 animate-on-scroll overflow-hidden">
+        <div className="flex items-center gap-4 mb-2 w-full max-w-3xl mx-auto">
+          <div className="h-px bg-purple-300 flex-1"></div>
+          <span className="text-purple-600 font-bold uppercase tracking-widest text-sm px-4 text-center">Supported By</span>
+          <div className="h-px bg-purple-300 flex-1"></div>
+        </div>
+        
+        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 text-center relative z-10 mb-4">
+          Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">Technical Partners</span>
+        </h2>
+        
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mt-8 w-full max-w-5xl mx-auto">
+          {[
+            { src: "/images/75_years_ieee_tems.jpg", alt: "75 Years IEEE TEMS" },
+            { src: "/images/SP2.jpg", alt: "SP2" },
+            { src: "/images/logo4.png", alt: "Logo 4" },
+            { src: "/images/logo3.png", alt: "Logo 3" },
+            { src: "/images/logo2.png", alt: "Logo 2" },
+            { src: "/images/IETE-Logo1.jpg", alt: "IETE" },
+            { src: "/images/IEEE_CS_IEM.jpg", alt: "IEEE CS IEM" },
+            { src: "/images/aenix.jpeg", alt: "Aenix" },
+          ].map((partner, idx) => (
+            <div 
+              key={idx} 
+              className="relative aspect-square w-full bg-white/40 backdrop-blur-md rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(147,51,234,0.15)] hover:-translate-y-2 transition-all duration-500 flex items-center justify-center border border-white/60 overflow-hidden group"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 to-indigo-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Image 
+                src={partner.src} 
+                alt={partner.alt} 
+                fill 
+                className="object-contain p-8 mix-blend-multiply group-hover:scale-110 transition-transform duration-500 drop-shadow-sm" 
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Important Deadlines Section */}
       <div className="w-full max-w-7xl px-4 flex flex-col items-center justify-center py-16 animate-on-scroll">
         <div className="relative group w-full overflow-hidden rounded-3xl bg-gradient-to-br from-purple-900 via-purple-800 to-black shadow-2xl p-10 md:p-16 text-center border border-purple-500/20">
