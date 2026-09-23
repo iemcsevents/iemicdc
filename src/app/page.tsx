@@ -238,7 +238,7 @@ export default function Home() {
           Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">Technical Partners</span>
         </h2>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mt-8 w-full max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 w-full max-w-6xl mx-auto">
           {[
             { src: "/images/75_years_ieee_tems.jpg", alt: "75 Years IEEE TEMS" },
             { src: "/images/SP2.jpg", alt: "SP2" },
@@ -246,20 +246,18 @@ export default function Home() {
             { src: "/images/logo3.png", alt: "Logo 3" },
             { src: "/images/logo2.png", alt: "Logo 2" },
             { src: "/images/IETE-Logo1.jpg", alt: "IETE" },
-            { src: "/images/IEEE_CS_IEM.jpg", alt: "IEEE CS IEM" },
+            { src: "/images/kolkata section ieee cs.jpeg", alt: "Kolkata IEEE CS" },
             { src: "/images/aenix.jpeg", alt: "Aenix" },
           ].map((partner, idx) => (
             <div 
               key={idx} 
-              className="relative aspect-square w-full bg-white/40 backdrop-blur-md rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(147,51,234,0.15)] hover:-translate-y-2 transition-all duration-500 flex items-center justify-center border border-white/60 overflow-hidden group"
+              className="relative bg-white/40 backdrop-blur-md rounded-[1.5rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(147,51,234,0.15)] hover:-translate-y-2 transition-all duration-500 flex items-center justify-center border border-white/60 group overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-100/50 to-indigo-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <Image 
+              <img 
                 src={partner.src} 
                 alt={partner.alt} 
-                fill 
-                className="object-contain p-8 mix-blend-multiply group-hover:scale-110 transition-transform duration-500 drop-shadow-sm" 
-                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="relative z-10 max-h-20 sm:max-h-24 md:max-h-28 lg:max-h-32 w-auto object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500 drop-shadow-sm" 
               />
             </div>
           ))}
