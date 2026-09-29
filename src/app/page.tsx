@@ -240,7 +240,7 @@ export default function Home() {
         
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 w-full max-w-6xl mx-auto">
           {[
-            { src: "/images/75_years_ieee_tems.jpg", alt: "75 Years IEEE TEMS" },
+            { src: "/images/ieee tems kolkata.jpeg", alt: "IEEE TEMS Kolkata" },
             { src: "/images/SP2.jpg", alt: "SP2" },
             { src: "/images/logo4.png", alt: "Logo 4" },
             { src: "/images/logo3.png", alt: "Logo 3" },

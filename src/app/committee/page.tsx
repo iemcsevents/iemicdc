@@ -20,6 +20,13 @@ const generalChairMembers = [
 ];
 
 const advisoryCommitteeMembers = [
+  "Prof. Dr. Fatima Roumate, Mohammed V University in Rabat, Morocco",
+  "Dr. Joaquín Torres-Sospedra, Universitat de València, Spain",
+  "Prof. Ts. Dr.-Ing. Sian Lun Lau, Sunway University, Malaysia",
+  "Prof. Dr. Qin Xin, University of the Faroe Islands, Faroe Islands",
+  "Prof. Dr. Martin Margala, University of Louisiana at Lafayette, USA",
+  "Dr. Leo Lin, University of Glasgow, UK",
+  "Prof. Dr. Milan Tuba, Singidunum University, Serbia",
   "Dr. João Manuel R.S.Tavares, Universidade do Porto, Portugal",
   "Dr. Daniele Giusto, University of Cagliari, Italy",
   "Dr. Xiao-Zhi Gao, University of Eastern Finland",
