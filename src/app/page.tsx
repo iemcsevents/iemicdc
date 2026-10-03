@@ -245,6 +245,7 @@ export default function Home() {
             { src: "/images/logo4.png", alt: "Logo 4" },
             { src: "/images/logo3.png", alt: "Logo 3" },
             { src: "/images/logo2.png", alt: "Logo 2" },
+            { src: "/images/ieee cis iem.png", alt: "IEEE CIS IEM" },
             { src: "/images/IETE-Logo1.jpg", alt: "IETE" },
             { src: "/images/kolkata section ieee cs.jpeg", alt: "Kolkata IEEE CS" },
             { src: "/images/aenix.jpeg", alt: "Aenix" },
